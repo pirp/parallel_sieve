@@ -1,0 +1,40 @@
+
+1.0.1:
+
+	-Now includes a wrapper for easier use with C++, see mcbsp.hpp
+	-Added a collection of simple examples to the codebase
+	-Bugfix for when main is the implied SPMD function (tests/spmd.c)
+	-Now compiles and links to BSP applications without warnings on 
+	 recent AMD and Intel processors using GCC versions 4.7 and 4.8.
+	-Now compiles with the XCode-supplied GCC version 4.2.1 on
+	 Mac OS X. This required two changes to the source code:
+	 
+	 1. Mach-specific timers have been substituted for timers based
+	 on POSIX Realtime (rt) extensions as the latter is unavailable 
+	 on Mac OS X.
+	 
+	 2. Thread pinning is not available on Mac OS X. Instead, OS X
+	 supports so-called thread affinity sets; see
+
+	     https://developer.apple.com/library/mac/#releasenotes/
+		Performance/RN-AffinityAPI/_index.html
+
+	 MulticoreBSP for C therefore does NOT support pinning on OS X,
+	 but instead uses (or exposes, in case of a manual affinity
+	 strategy) the Mac OS X affinity API.
+
+	 Important consequences:
+
+		*OS X affinity policy directives are basically HINTS;
+	 	 the OS X kernel may decide to ignore them. In
+		 particular, it may decide to migrate threads while
+		 the parallel application is running.
+
+		*While the compact and scatter strategies translate
+		 succesfully to the OS X affinity sets paradigm,
+		 manual thread pinning strategies might not.
+		 Therefore, when running MulticoreBSP for C programs
+		 on Mac OS X which use manually set affinities,
+		 please make sure your thread `pinnings' still make
+		 sense within the OS X affinity sets formulation.
+
