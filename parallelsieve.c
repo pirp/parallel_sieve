@@ -16,13 +16,13 @@ void parSieve(){
 	int q=sqrt(N);
 	p=bsp_nprocs();
 	s=bsp_pid();
-
-	int* list=seq(q);
-	
 	int i,j;
+
+	double t0=bsp_time();
+
+	// sieves sequentially and creates a list with only the primes up to sqrt(N)
+	int* list=seq(q);
 	int count=0;
-
-
 	for(i=0;i<q;i++) if(list[i]!=0) count++; 
 
 	int* initial_primes = vecalloci(count);
@@ -37,13 +37,11 @@ void parSieve(){
 		}
 	}
 
-//	printf("%d The number of primes below %d is %d \n",s,(int)sqrt(N),count);
-	double ratio = (double)(N-q)/(2*p);
-	int b=ceil(ratio); // number of local element
-	
-	printf("local elements %d\n",b);
 
+	// creation of the local part of numbers to sieve in parallel
 
+	double ratio = 1.0*(N-q)/(2*p);
+	int b=ceil(ratio); 
 	int* local=vecalloci(b);
 	
 	i=0;
@@ -57,7 +55,40 @@ void parSieve(){
 		j+=2;
 	}
 
-	if(s==3) for(i=0;i<b;i++) printf("%d: l[%d]=%d\n",s,i,local[i]);
+	//actual sieving: whenever a multiple is found flag it by setting it negative
+
+	
+
+	for(i=0;i<count;i++){
+		for(j=0;j<b;j++) if(abs(local[j])%initial_primes[i] == 0) break;
+		while(j<=b){
+			if(local[j]>0) local[j] = -local[j];
+			j+=initial_primes[i];
+		}
+	}
+
+	int count2=0;
+
+	for(i=0;i<b;i++) if(local[i]>0) count2++;
+	if (s==0) count2+=count;
+
+	int* globalCount = vecalloci(p);
+	bsp_push_reg(globalCount,p*SZINT);
+	bsp_sync();
+	
+	for(i=0;i<p;i++) bsp_put(i,&count2,globalCount,s*SZINT,SZINT);
+	bsp_sync();
+
+	double t1=bsp_time();
+
+	int finalCount=0;
+	for(i=0;i<p;i++) finalCount+=globalCount[i];
+
+	printf("%d: ha! I claim there are %d primes in %.6lf s\n",s,finalCount,t1-t0);
+
+	//if(s==0) for(i=0;i<b;i++) printf("%d: l[%d]=%d\n",s,i,local[i]);
+
+
 
 	bsp_end();
 }
