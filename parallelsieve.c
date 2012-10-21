@@ -78,13 +78,14 @@ void parSieve(){
 	
 	for(i=0;i<p;i++) bsp_put(i,&count2,globalCount,s*SZINT,SZINT);
 	bsp_sync();
+	bsp_pop_reg(globalCount);
 
 	double t1=bsp_time();
 
 	int finalCount=0;
 	for(i=0;i<p;i++) finalCount+=globalCount[i];
 
-	bsp_pop_reg(globalCount);
+
 
 	printf("%d: ha! I claim there are %d primes in %.6lf s\n",s,finalCount,t1-t0);
 
@@ -100,49 +101,41 @@ void parSieve(){
 
 	for(i=0;i<b-1;i++){
 		if(local[i]<0) continue;
-		if(local[i+1]>0) {
-			nlocaltwins++;
-			printf("(%d,%d) are twins\n",local[i],local[i+1]);
-		}
+		if(local[i+1]>0) nlocaltwins++;
 	}
 
-	int local_last_is_prime = 0;
-	if(s<p-1){
-			if(local[b-1]>0){
-				local_last_is_prime =1;
-				printf("ha! %d is prime\n",local[b-1]);
-		}
-	}
-	//int local_last_is_prime = ((local[b-1]>0) ? 1 :0);
+	int local_last_is_prime = ((local[b-1]>0) ? 1 :0);
 	int previous_last_is_prime=0;
 	bsp_push_reg(&previous_last_is_prime,SZINT);
 	bsp_sync();
-	if(s<p-1){
-		bsp_put(s+1,&local_last_is_prime,&previous_last_is_prime,0,SZINT);
-	}
+	if(s<p-1) bsp_put(s+1,&local_last_is_prime,&previous_last_is_prime,0,SZINT);
+	bsp_sync();
+	bsp_pop_reg(&previous_last_is_prime);
+	
+	if(previous_last_is_prime && (local[0]>0)) nlocaltwins++;
 
+	int* globalTwinCount = vecalloci(p);
+	bsp_push_reg(globalTwinCount,p*SZINT);
 	bsp_sync();
 	
-	printf("%d:previous_last_is_prime: %d\n",s,previous_last_is_prime);
+	for(i=0;i<p;i++) bsp_put(i,&nlocaltwins,globalTwinCount,s*SZINT,SZINT);
+	bsp_sync();
+	bsp_pop_reg(globalTwinCount);
 
+	double t2=bsp_time();
 
-	if(previous_last_is_prime && (local[0]>0)){
-		nlocaltwins++;
-			printf("(%d,%d) are twins\n",local[0]-2,local[0]);
-	}
+	int finalTwinCount=0;
+	for(i=0;i<p;i++) finalTwinCount+=globalTwinCount[i];
 
-	//printf("%d: twins=%d\n",s,nlocaltwins);
-
-
-	
+	printf("%d: ha! I claim there are %d pairs of twin primes in %.6lf s\n",s,finalTwinCount,t2-t1);
 
 	vecfreei(local);
 	vecfreei(globalCount);
+	vecfreei(globalTwinCount);
 	bsp_end();
 }
 
 int twin(int i, int j){
-	printf("checking %d and %d\n",i,j);
 	return ((j-2==i) ? 1 : 0);
 }
 
