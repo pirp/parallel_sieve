@@ -55,6 +55,11 @@ void parSieve(){
 		j+=2;
 	}
 
+	while(i<b){
+		local[i]=0;
+		i++;
+	}
+
 	//actual sieving: whenever a multiple is found flag it by setting it negative
 
 	
@@ -117,7 +122,6 @@ void parSieve(){
 	int* globalTwinCount = vecalloci(p);
 	bsp_push_reg(globalTwinCount,p*SZINT);
 	bsp_sync();
-	
 	for(i=0;i<p;i++) bsp_put(i,&nlocaltwins,globalTwinCount,s*SZINT,SZINT);
 	bsp_sync();
 	bsp_pop_reg(globalTwinCount);
@@ -129,6 +133,70 @@ void parSieve(){
 
 	printf("%d: ha! I claim there are %d pairs of twin primes in %.6lf s\n",s,finalTwinCount,t2-t1);
 
+	// Goldbach stuff
+
+	int* localPrimes = vecalloci(count2);
+
+	i=0;
+
+	if(s==0){
+		for(j=0;j<count;j++) {
+			localPrimes[i]=initial_primes[j];
+			i++;
+		}
+	}
+
+	for(j=0;j<b;j++) {
+		if(local[j]>0){
+			localPrimes[i]=local[j];
+			i++;
+		}
+	}
+
+
+	int* allPrimes = vecalloci(finalCount);
+	bsp_push_reg(allPrimes,finalCount*SZINT);
+	bsp_sync();
+	int offset =0;
+	for(i=0;i<s;i++) offset+=globalCount[i];
+	for(i=0;i<p;i++) bsp_put(i,localPrimes,allPrimes,offset*SZINT,count2*SZINT);
+	bsp_sync();
+	bsp_pop_reg(allPrimes);	
+
+	int largestEven = 2*allPrimes[finalCount-1];
+	int blockEven = ceil(1.0*(largestEven-4)/(2*p));
+
+	int* listEven = vecalloci(blockEven);
+
+	i=0;
+	j=4+2*s*blockEven;
+
+	while( i<blockEven && j<=largestEven ){ 
+		listEven[i]=j;
+		i++;
+		j+=2;
+	}
+	while(i<blockEven){
+		listEven[i]=0;
+		i++;
+	}
+int k;
+//	if (s==3)for(i=0;i<blockEven;i++) printf("%d, listEven[%d]=%d\n",s,i,listEven[i]);
+
+	for(i=0;i<blockEven;i++){
+		for(j=0;j<finalCount;j++){
+			for(k=j;k<finalCount;k++)
+				if(allPrimes[j]+allPrimes[k]==listEven[i]){
+					printf("ha! %d is the sum of %d and %d\n",listEven[i],allPrimes[j],allPrimes[k]);
+					goto next;
+				}
+		}
+		next:{};
+	}
+
+
+	vecfreei(localPrimes);
+	vecfreei(allPrimes);
 	vecfreei(local);
 	vecfreei(globalCount);
 	vecfreei(globalTwinCount);
