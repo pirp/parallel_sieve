@@ -6,6 +6,7 @@
 
 int P;
 int N;
+int goldbach = 0;
 
 
 
@@ -134,72 +135,80 @@ void parSieve(){
 	printf("%d: ha! I claim there are %d pairs of twin primes in %.6lf s\n",s,finalTwinCount,t2-t1);
 
 	// Goldbach stuff
+	if(goldbach){
+		int* localPrimes = vecalloci(count2);
 
-	int* localPrimes = vecalloci(count2);
+		i=0;
 
-	i=0;
+		if(s==0){
+			for(j=0;j<count;j++) {
+				localPrimes[i]=initial_primes[j];
+				i++;
+			}
+		}
 
-	if(s==0){
-		for(j=0;j<count;j++) {
-			localPrimes[i]=initial_primes[j];
+		for(j=0;j<b;j++) {
+			if(local[j]>0){
+				localPrimes[i]=local[j];
+				i++;
+			}
+		}
+
+
+		int* allPrimes = vecalloci(finalCount);
+		bsp_push_reg(allPrimes,finalCount*SZINT);
+		bsp_sync();
+		int offset =0;
+		for(i=0;i<s;i++) offset+=globalCount[i];
+		for(i=0;i<p;i++) bsp_put(i,localPrimes,allPrimes,offset*SZINT,count2*SZINT);
+		bsp_sync();
+		bsp_pop_reg(allPrimes);	
+
+		int largestEven = ( N%2 ? N-1 : N );
+		int blockEven = ceil(1.0*(largestEven-4)/(2*p));
+
+		int* listEven = vecalloci(blockEven);
+
+		i=0;
+		j=4+2*s*blockEven;
+
+		while( i<blockEven && j<=largestEven ){ 
+			listEven[i]=j;
+			i++;
+			j+=2;
+		}
+		while(i<blockEven){
+			listEven[i]=0;
 			i++;
 		}
-	}
+		int k;
+		//	if (s==3)for(i=0;i<blockEven;i++) printf("%d, listEven[%d]=%d\n",s,i,listEven[i]);
 
-	for(j=0;j<b;j++) {
-		if(local[j]>0){
-			localPrimes[i]=local[j];
-			i++;
+		for(i=0;i<blockEven;i++){
+			for(j=0;j<finalCount;j++){
+				for(k=j;k<finalCount;k++)
+					if(allPrimes[j]+allPrimes[k]==listEven[i]){
+						listEven[i]=0;
+						goto next;
+					}
+			}
+			next:{};
 		}
-	}
-
-
-	int* allPrimes = vecalloci(finalCount);
-	bsp_push_reg(allPrimes,finalCount*SZINT);
-	bsp_sync();
-	int offset =0;
-	for(i=0;i<s;i++) offset+=globalCount[i];
-	for(i=0;i<p;i++) bsp_put(i,localPrimes,allPrimes,offset*SZINT,count2*SZINT);
-	bsp_sync();
-	bsp_pop_reg(allPrimes);	
-
-	int largestEven = 2*allPrimes[finalCount-1];
-	int blockEven = ceil(1.0*(largestEven-4)/(2*p));
-
-	int* listEven = vecalloci(blockEven);
-
-	i=0;
-	j=4+2*s*blockEven;
-
-	while( i<blockEven && j<=largestEven ){ 
-		listEven[i]=j;
-		i++;
-		j+=2;
-	}
-	while(i<blockEven){
-		listEven[i]=0;
-		i++;
-	}
-int k;
-//	if (s==3)for(i=0;i<blockEven;i++) printf("%d, listEven[%d]=%d\n",s,i,listEven[i]);
-
-	for(i=0;i<blockEven;i++){
-		for(j=0;j<finalCount;j++){
-			for(k=j;k<finalCount;k++)
-				if(allPrimes[j]+allPrimes[k]==listEven[i]){
-					printf("ha! %d is the sum of %d and %d\n",listEven[i],allPrimes[j],allPrimes[k]);
-					goto next;
-				}
+		int numberNonGoldbach=0;
+		for(i=0;i<blockEven;i++) if(listEven[i]!= 0){
+			printf("%d: listEven[%d]=%d\n",s,i,listEven[i]);
+			numberNonGoldbach++;
 		}
-		next:{};
+		double t3 = bsp_time();
+		printf("%d: there are %d numbers that are not sum of 2 primes in %.6lf s\n",s,numberNonGoldbach,t3-t2);
+
+
+	//	vecfreei(localPrimes);
+	//	vecfreei(allPrimes);
 	}
-
-
-	vecfreei(localPrimes);
-	vecfreei(allPrimes);
-	vecfreei(local);
-	vecfreei(globalCount);
-	vecfreei(globalTwinCount);
+//	vecfreei(local);
+//	vecfreei(globalCount);
+//	vecfreei(globalTwinCount);
 	bsp_end();
 }
 
@@ -212,6 +221,7 @@ int main(int argc, char **argv){
 
 	N = atoi(argv[1]);
 	P = atoi(argv[2]);
+	goldbach = atoi(argv[3]);
 	
 
 	parSieve();
