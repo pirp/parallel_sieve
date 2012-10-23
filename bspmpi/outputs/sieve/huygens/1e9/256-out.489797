@@ -1,0 +1,682 @@
+$MP_PROCS is set to 4.
+mpcc -o par_sieve parallelsieve.c -lbsponmpi -lm #-g
+115: Found 50847534 primes in 1.285993 s
+117: Found 50847534 primes in 1.286124 s
+138: Found 50847534 primes in 1.285990 s
+119: Found 50847534 primes in 1.286464 s
+121: Found 50847534 primes in 1.286841 s
+113: Found 50847534 primes in 1.286345 s
+128: Found 50847534 primes in 1.287217 s
+123: Found 50847534 primes in 1.287015 s
+130: Found 50847534 primes in 1.286938 s
+125: Found 50847534 primes in 1.287220 s
+132: Found 50847534 primes in 1.286791 s
+134: Found 50847534 primes in 1.286475 s
+136: Found 50847534 primes in 1.286134 s
+140: Found 50847534 primes in 1.286346 s
+111: Found 50847534 primes in 1.286680 s
+126: Found 50847534 primes in 1.287724 s
+127: Found 50847534 primes in 1.287713 s
+142: Found 50847534 primes in 1.286682 s
+109: Found 50847534 primes in 1.286674 s
+124: Found 50847534 primes in 1.287893 s
+129: Found 50847534 primes in 1.287815 s
+144: Found 50847534 primes in 1.286667 s
+253: Found 50847534 primes in 1.287383 s
+105: Found 50847534 primes in 1.286820 s
+107: Found 50847534 primes in 1.286839 s
+131: Found 50847534 primes in 1.288143 s
+146: Found 50847534 primes in 1.286838 s
+148: Found 50847534 primes in 1.286819 s
+150: Found 50847534 primes in 1.286805 s
+  0: Found 50847534 primes in 1.287326 s
+ 97: Found 50847534 primes in 1.286777 s
+ 99: Found 50847534 primes in 1.286794 s
+251: Found 50847534 primes in 1.287608 s
+101: Found 50847534 primes in 1.286807 s
+254: Found 50847534 primes in 1.287379 s
+ 95: Found 50847534 primes in 1.286756 s
+103: Found 50847534 primes in 1.286827 s
+255: Found 50847534 primes in 1.287378 s
+120: Found 50847534 primes in 1.288228 s
+133: Found 50847534 primes in 1.288220 s
+160: Found 50847534 primes in 1.286703 s
+122: Found 50847534 primes in 1.288219 s
+152: Found 50847534 primes in 1.286808 s
+118: Found 50847534 primes in 1.288381 s
+154: Found 50847534 primes in 1.286795 s
+  2: Found 50847534 primes in 1.287599 s
+156: Found 50847534 primes in 1.286777 s
+249: Found 50847534 primes in 1.288208 s
+158: Found 50847534 primes in 1.286760 s
+252: Found 50847534 primes in 1.287622 s
+ 87: Found 50847534 primes in 1.286956 s
+135: Found 50847534 primes in 1.288317 s
+ 89: Found 50847534 primes in 1.286871 s
+114: Found 50847534 primes in 1.288824 s
+137: Found 50847534 primes in 1.288590 s
+116: Found 50847534 primes in 1.288616 s
+162: Found 50847534 primes in 1.286782 s
+  1: Found 50847534 primes in 1.287621 s
+ 91: Found 50847534 primes in 1.286782 s
+164: Found 50847534 primes in 1.286874 s
+250: Found 50847534 primes in 1.287896 s
+  4: Found 50847534 primes in 1.288195 s
+ 93: Found 50847534 primes in 1.286704 s
+ 81: Found 50847534 primes in 1.287261 s
+112: Found 50847534 primes in 1.288953 s
+139: Found 50847534 primes in 1.288698 s
+166: Found 50847534 primes in 1.286956 s
+ 83: Found 50847534 primes in 1.287128 s
+141: Found 50847534 primes in 1.288869 s
+168: Found 50847534 primes in 1.287057 s
+  3: Found 50847534 primes in 1.287889 s
+ 85: Found 50847534 primes in 1.287065 s
+170: Found 50847534 primes in 1.287123 s
+246: Found 50847534 primes in 1.288016 s
+  5: Found 50847534 primes in 1.287977 s
+106: Found 50847534 primes in 1.289627 s
+172: Found 50847534 primes in 1.287260 s
+247: Found 50847534 primes in 1.288713 s
+  6: Found 50847534 primes in 1.288702 s
+108: Found 50847534 primes in 1.289471 s
+143: Found 50847534 primes in 1.289152 s
+248: Found 50847534 primes in 1.287971 s
+  7: Found 50847534 primes in 1.288016 s
+ 79: Found 50847534 primes in 1.287618 s
+110: Found 50847534 primes in 1.289340 s
+145: Found 50847534 primes in 1.289252 s
+238: Found 50847534 primes in 1.288157 s
+  8: Found 50847534 primes in 1.288934 s
+102: Found 50847534 primes in 1.289949 s
+147: Found 50847534 primes in 1.289449 s
+174: Found 50847534 primes in 1.287613 s
+240: Found 50847534 primes in 1.288126 s
+  9: Found 50847534 primes in 1.288040 s
+104: Found 50847534 primes in 1.289754 s
+149: Found 50847534 primes in 1.289676 s
+242: Found 50847534 primes in 1.288094 s
+ 11: Found 50847534 primes in 1.288088 s
+ 75: Found 50847534 primes in 1.287845 s
+ 96: Found 50847534 primes in 1.290449 s
+151: Found 50847534 primes in 1.289913 s
+176: Found 50847534 primes in 1.287712 s
+243: Found 50847534 primes in 1.289186 s
+ 10: Found 50847534 primes in 1.289174 s
+ 77: Found 50847534 primes in 1.287721 s
+ 98: Found 50847534 primes in 1.290310 s
+153: Found 50847534 primes in 1.290040 s
+222: Found 50847534 primes in 1.288367 s
+244: Found 50847534 primes in 1.288044 s
+ 12: Found 50847534 primes in 1.289381 s
+ 94: Found 50847534 primes in 1.290632 s
+100: Found 50847534 primes in 1.290163 s
+155: Found 50847534 primes in 1.290303 s
+178: Found 50847534 primes in 1.287845 s
+245: Found 50847534 primes in 1.288946 s
+ 13: Found 50847534 primes in 1.288124 s
+ 33: Found 50847534 primes in 1.288486 s
+157: Found 50847534 primes in 1.290445 s
+224: Found 50847534 primes in 1.288243 s
+ 15: Found 50847534 primes in 1.288159 s
+ 17: Found 50847534 primes in 1.288184 s
+ 19: Found 50847534 primes in 1.288219 s
+ 21: Found 50847534 primes in 1.288260 s
+159: Found 50847534 primes in 1.290622 s
+161: Found 50847534 primes in 1.291002 s
+226: Found 50847534 primes in 1.288240 s
+ 23: Found 50847534 primes in 1.288264 s
+ 73: Found 50847534 primes in 1.288173 s
+163: Found 50847534 primes in 1.291238 s
+214: Found 50847534 primes in 1.288571 s
+228: Found 50847534 primes in 1.288271 s
+ 25: Found 50847534 primes in 1.288260 s
+ 88: Found 50847534 primes in 1.291494 s
+180: Found 50847534 primes in 1.288165 s
+216: Found 50847534 primes in 1.288512 s
+230: Found 50847534 primes in 1.288265 s
+ 27: Found 50847534 primes in 1.288252 s
+ 35: Found 50847534 primes in 1.288531 s
+ 90: Found 50847534 primes in 1.291247 s
+232: Found 50847534 primes in 1.288261 s
+ 29: Found 50847534 primes in 1.288235 s
+ 37: Found 50847534 primes in 1.288515 s
+ 92: Found 50847534 primes in 1.291009 s
+218: Found 50847534 primes in 1.288536 s
+234: Found 50847534 primes in 1.288225 s
+ 14: Found 50847534 primes in 1.289649 s
+ 39: Found 50847534 primes in 1.288569 s
+165: Found 50847534 primes in 1.291485 s
+220: Found 50847534 primes in 1.288512 s
+236: Found 50847534 primes in 1.288190 s
+ 16: Found 50847534 primes in 1.289813 s
+ 41: Found 50847534 primes in 1.288557 s
+ 65: Found 50847534 primes in 1.288518 s
+167: Found 50847534 primes in 1.291398 s
+192: Found 50847534 primes in 1.288494 s
+239: Found 50847534 primes in 1.289610 s
+ 31: Found 50847534 primes in 1.288376 s
+ 43: Found 50847534 primes in 1.288571 s
+ 67: Found 50847534 primes in 1.288507 s
+169: Found 50847534 primes in 1.291340 s
+194: Found 50847534 primes in 1.288475 s
+241: Found 50847534 primes in 1.289384 s
+ 18: Found 50847534 primes in 1.289992 s
+ 45: Found 50847534 primes in 1.288577 s
+ 69: Found 50847534 primes in 1.288477 s
+171: Found 50847534 primes in 1.291284 s
+196: Found 50847534 primes in 1.288459 s
+235: Found 50847534 primes in 1.289870 s
+ 20: Found 50847534 primes in 1.290075 s
+ 47: Found 50847534 primes in 1.288556 s
+ 71: Found 50847534 primes in 1.288423 s
+173: Found 50847534 primes in 1.291201 s
+237: Found 50847534 primes in 1.289712 s
+ 22: Found 50847534 primes in 1.290130 s
+ 49: Found 50847534 primes in 1.288537 s
+ 74: Found 50847534 primes in 1.291277 s
+175: Found 50847534 primes in 1.291184 s
+198: Found 50847534 primes in 1.288476 s
+229: Found 50847534 primes in 1.290141 s
+ 24: Found 50847534 primes in 1.290227 s
+ 51: Found 50847534 primes in 1.288513 s
+ 76: Found 50847534 primes in 1.291218 s
+177: Found 50847534 primes in 1.291206 s
+200: Found 50847534 primes in 1.288511 s
+231: Found 50847534 primes in 1.290031 s
+ 26: Found 50847534 primes in 1.290383 s
+ 78: Found 50847534 primes in 1.291180 s
+202: Found 50847534 primes in 1.288513 s
+233: Found 50847534 primes in 1.289986 s
+ 28: Found 50847534 primes in 1.290452 s
+ 53: Found 50847534 primes in 1.288510 s
+204: Found 50847534 primes in 1.288532 s
+225: Found 50847534 primes in 1.290315 s
+ 30: Found 50847534 primes in 1.290520 s
+ 55: Found 50847534 primes in 1.288472 s
+ 80: Found 50847534 primes in 1.291192 s
+182: Found 50847534 primes in 1.288412 s
+206: Found 50847534 primes in 1.288558 s
+227: Found 50847534 primes in 1.290224 s
+ 57: Found 50847534 primes in 1.288467 s
+ 82: Found 50847534 primes in 1.291276 s
+184: Found 50847534 primes in 1.288469 s
+208: Found 50847534 primes in 1.288576 s
+ 59: Found 50847534 primes in 1.288477 s
+ 84: Found 50847534 primes in 1.291330 s
+186: Found 50847534 primes in 1.288500 s
+210: Found 50847534 primes in 1.288572 s
+ 61: Found 50847534 primes in 1.288493 s
+ 86: Found 50847534 primes in 1.291391 s
+188: Found 50847534 primes in 1.288515 s
+212: Found 50847534 primes in 1.288560 s
+ 63: Found 50847534 primes in 1.288518 s
+ 64: Found 50847534 primes in 1.291330 s
+190: Found 50847534 primes in 1.288533 s
+193: Found 50847534 primes in 1.291366 s
+ 32: Found 50847534 primes in 1.290590 s
+ 66: Found 50847534 primes in 1.291299 s
+179: Found 50847534 primes in 1.291277 s
+195: Found 50847534 primes in 1.291366 s
+ 34: Found 50847534 primes in 1.290632 s
+ 68: Found 50847534 primes in 1.291313 s
+181: Found 50847534 primes in 1.291284 s
+197: Found 50847534 primes in 1.291368 s
+ 36: Found 50847534 primes in 1.290666 s
+ 70: Found 50847534 primes in 1.291310 s
+183: Found 50847534 primes in 1.291313 s
+199: Found 50847534 primes in 1.291286 s
+ 38: Found 50847534 primes in 1.290713 s
+ 72: Found 50847534 primes in 1.291277 s
+185: Found 50847534 primes in 1.291316 s
+201: Found 50847534 primes in 1.291157 s
+ 40: Found 50847534 primes in 1.290752 s
+187: Found 50847534 primes in 1.291326 s
+203: Found 50847534 primes in 1.291055 s
+ 42: Found 50847534 primes in 1.290797 s
+189: Found 50847534 primes in 1.291329 s
+205: Found 50847534 primes in 1.290972 s
+ 44: Found 50847534 primes in 1.290848 s
+191: Found 50847534 primes in 1.291333 s
+207: Found 50847534 primes in 1.290913 s
+ 46: Found 50847534 primes in 1.290907 s
+209: Found 50847534 primes in 1.290847 s
+ 48: Found 50847534 primes in 1.290964 s
+211: Found 50847534 primes in 1.290802 s
+ 50: Found 50847534 primes in 1.291051 s
+213: Found 50847534 primes in 1.290753 s
+ 52: Found 50847534 primes in 1.291154 s
+215: Found 50847534 primes in 1.290722 s
+ 54: Found 50847534 primes in 1.291280 s
+ 56: Found 50847534 primes in 1.291378 s
+ 58: Found 50847534 primes in 1.291374 s
+ 60: Found 50847534 primes in 1.291370 s
+217: Found 50847534 primes in 1.290682 s
+ 62: Found 50847534 primes in 1.291336 s
+219: Found 50847534 primes in 1.290637 s
+221: Found 50847534 primes in 1.290592 s
+223: Found 50847534 primes in 1.290533 s
+
+### Summarized output of "llq -l -x -j p6012.huygens.sara.nl.489797.0" invoked on p6052 ###
+        Job Step Id: p6012.huygens.sara.nl.489797.0
+           Job Name: p6012.huygens.sara.nl.489797
+          Step Name: 0
+  Structure Version: 10
+              Owner: bissstud
+         Queue Date: Tue Oct 23 11:01:38 2012
+             Status: Running
+          Recurring: False
+      Dispatch Time: Tue Oct 23 11:02:07 2012
+    Completion Date: Tue Oct 23 11:02:33 CEST 2012 (i.e. time of job epilog invocation)
+        Favored Job: No
+      Notifications: Never
+ Virtual Image Size: 1 kb
+         Large Page: N
+         Coschedule: no
+       SMT required: as_is
+    MetaCluster Job: no
+     Checkpointable: no
+   Ckpt Elapse Time: 0 seconds
+    Ckpt Accum Time: 0 seconds
+  Restart From Ckpt: no
+ Restart Same Nodes: no
+            Restart: no
+        Preemptable: yes
+ Preempt Wait Count: 0
+     User Hold Time: 00:00:00 (0 seconds)
+               RSet: RSET_MCM_AFFINITY
+Mcm Affinity Option: MCM_DISTRIBUTE MCM_MEM_PREF MCM_SNI_NONE
+      Task Affinity: core(1)
+      Cpus Per Core:  0
+   Parallel Threads:  0
+                Env: OMP_NUM_THREADS=1
+                 In: /dev/null
+                Out: ../../outputs/sieve/huygens/1e9/256-out.489797
+                Err: ../../outputs/sieve/huygens/1e9/256-err.489797
+Initial Working Dir: /gpfs/h05/bissstud/Students12/3776131/parallel_sieve/bspmpi/jobscripts/1e9
+          Resources: ConsumableMemory(2.000 gb)
+          Step Type: General Parallel
+         Node Usage: not_shared
+    Submitting Host: p6012.huygens.sara.nl
+        Schedd Host: p6012.huygens.sara.nl
+      Job Queue Key: 489797
+        Notify User: bissstud@p6012.huygens.sara.nl
+              Shell: /bin/bash
+  LoadLeveler Group: No_Group
+              Class: short
+    Ckpt Hard Limit: undefined
+    Ckpt Soft Limit: undefined
+     Cpu Hard Limit: unlimited
+     Cpu Soft Limit: unlimited
+    Data Hard Limit: undefined
+    Data Soft Limit: undefined
+      As Hard Limit: undefined
+      As Soft Limit: undefined
+   Nproc Hard Limit: undefined
+   Nproc Soft Limit: undefined
+ Memlock Hard Limit: undefined
+ Memlock Soft Limit: undefined
+   Locks Hard Limit: undefined
+   Locks Soft Limit: undefined
+  Nofile Hard Limit: undefined
+  Nofile Soft Limit: undefined
+    Core Hard Limit: unlimited
+    Core Soft Limit: 0 bytes
+    File Hard Limit: undefined
+    File Soft Limit: undefined
+   Stack Hard Limit: unlimited
+   Stack Soft Limit: unlimited
+     Rss Hard Limit: undefined
+     Rss Soft Limit: undefined
+Step Cpu Hard Limit: unlimited
+Step Cpu Soft Limit: unlimited
+Wall Clk Hard Limit: 01:00:00 (3600 seconds)
+Wall Clk Soft Limit: 01:00:00 (3600 seconds)
+         Unix Group: bissstud
+ User Space Windows: 0
+      Bulk Transfer: No
+Adapter Requirement: (sn_all,MPI,US,not_shared,AVERAGE,instances=1,)
+          Step Cpus: 0
+Step Virtual Memory: 0.000 mb
+   Step Real Memory: 512.000 gb
+Step Large Page Mem: 0.000 mb
+       Running Host: p6052.huygens.sara.nl
+      Machine Speed: 1.000000
+  Starter User Time: 00:00:00.000000
+Starter System Time: 00:00:00.000000
+ Starter Total Time: 00:00:00.000000
+     Starter maxrss: 0
+      Starter ixrss: 0
+      Starter idrss: 0
+      Starter isrss: 0
+     Starter minflt: 0
+     Starter majflt: 0
+      Starter nswap: 0
+    Starter inblock: 0
+    Starter oublock: 0
+     Starter msgsnd: 0
+     Starter msgrcv: 0
+   Starter nsignals: 0
+      Starter nvcsw: 0
+     Starter nivcsw: 0
+     Step User Time: 00:00:00.000000
+   Step System Time: 00:00:00.000000
+    Step Total Time: 00:00:00.000000
+        Step maxrss: 0
+         Step ixrss: 0
+         Step idrss: 0
+         Step isrss: 0
+        Step minflt: 0
+        Step majflt: 0
+         Step nswap: 0
+       Step inblock: 0
+       Step oublock: 0
+        Step msgsnd: 0
+        Step msgrcv: 0
+      Step nsignals: 0
+         Step nvcsw: 0
+        Step nivcsw: 0
+     Cluster Option: none
+     Network Usages: 0(1,MPI,US,1,0),
+Stripe Min Networks: False
+--------------------------------------------------------------------------------
+Node
+----
+
+   Name            : 
+   Requirements    : (Memory >= 4096 )
+   Preferences     : 
+   Node minimum    : 8
+   Node maximum    : 8
+   Node actual     : 8
+   Allocated Hosts : p6052.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+                   + p6072.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+                   + p6101.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+                   + p6102.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+                   + p6103.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+                   + p6104.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+                   + p6041.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+                   + p6042.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+
+   Master Task
+   -----------
+
+      Executable   : /home/bissstud/Students12/3776131/parallel_sieve/bspmpi/jobscripts/1e9/js256
+      Exec Args    : 
+      Num Task Inst: 1
+      Task Instance: p6052:-1:,
+
+   Task
+   ----
+
+      Num Task Inst: 256
+      Task Instance: p6052:0:,MCM0:CPU< 0-1 >
+      Task Instance: p6052:1:,MCM1:CPU< 16-17 >
+      Task Instance: p6052:2:,MCM2:CPU< 32-33 >
+      Task Instance: p6052:3:,MCM3:CPU< 48-49 >
+      Task Instance: p6052:4:,MCM0:CPU< 2-3 >
+      Task Instance: p6052:5:,MCM1:CPU< 18-19 >
+      Task Instance: p6052:6:,MCM2:CPU< 34-35 >
+      Task Instance: p6052:7:,MCM3:CPU< 50-51 >
+      Task Instance: p6052:8:,MCM0:CPU< 4-5 >
+      Task Instance: p6052:9:,MCM1:CPU< 20-21 >
+      Task Instance: p6052:10:,MCM2:CPU< 36-37 >
+      Task Instance: p6052:11:,MCM3:CPU< 52-53 >
+      Task Instance: p6052:12:,MCM0:CPU< 6-7 >
+      Task Instance: p6052:13:,MCM1:CPU< 22-23 >
+      Task Instance: p6052:14:,MCM2:CPU< 38-39 >
+      Task Instance: p6052:15:,MCM3:CPU< 54-55 >
+      Task Instance: p6052:16:,MCM0:CPU< 8-9 >
+      Task Instance: p6052:17:,MCM1:CPU< 24-25 >
+      Task Instance: p6052:18:,MCM2:CPU< 40-41 >
+      Task Instance: p6052:19:,MCM3:CPU< 56-57 >
+      Task Instance: p6052:20:,MCM0:CPU< 10-11 >
+      Task Instance: p6052:21:,MCM1:CPU< 26-27 >
+      Task Instance: p6052:22:,MCM2:CPU< 42-43 >
+      Task Instance: p6052:23:,MCM3:CPU< 58-59 >
+      Task Instance: p6052:24:,MCM0:CPU< 12-13 >
+      Task Instance: p6052:25:,MCM1:CPU< 28-29 >
+      Task Instance: p6052:26:,MCM2:CPU< 44-45 >
+      Task Instance: p6052:27:,MCM3:CPU< 60-61 >
+      Task Instance: p6052:28:,MCM0:CPU< 14-15 >
+      Task Instance: p6052:29:,MCM1:CPU< 30-31 >
+      Task Instance: p6052:30:,MCM2:CPU< 46-47 >
+      Task Instance: p6052:31:,MCM3:CPU< 62-63 >
+      Task Instance: p6072:32:,MCM0:CPU< 0-1 >
+      Task Instance: p6072:33:,MCM1:CPU< 16-17 >
+      Task Instance: p6072:34:,MCM2:CPU< 32-33 >
+      Task Instance: p6072:35:,MCM3:CPU< 48-49 >
+      Task Instance: p6072:36:,MCM0:CPU< 2-3 >
+      Task Instance: p6072:37:,MCM1:CPU< 18-19 >
+      Task Instance: p6072:38:,MCM2:CPU< 34-35 >
+      Task Instance: p6072:39:,MCM3:CPU< 50-51 >
+      Task Instance: p6072:40:,MCM0:CPU< 4-5 >
+      Task Instance: p6072:41:,MCM1:CPU< 20-21 >
+      Task Instance: p6072:42:,MCM2:CPU< 36-37 >
+      Task Instance: p6072:43:,MCM3:CPU< 52-53 >
+      Task Instance: p6072:44:,MCM0:CPU< 6-7 >
+      Task Instance: p6072:45:,MCM1:CPU< 22-23 >
+      Task Instance: p6072:46:,MCM2:CPU< 38-39 >
+      Task Instance: p6072:47:,MCM3:CPU< 54-55 >
+      Task Instance: p6072:48:,MCM0:CPU< 8-9 >
+      Task Instance: p6072:49:,MCM1:CPU< 24-25 >
+      Task Instance: p6072:50:,MCM2:CPU< 40-41 >
+      Task Instance: p6072:51:,MCM3:CPU< 56-57 >
+      Task Instance: p6072:52:,MCM0:CPU< 10-11 >
+      Task Instance: p6072:53:,MCM1:CPU< 26-27 >
+      Task Instance: p6072:54:,MCM2:CPU< 42-43 >
+      Task Instance: p6072:55:,MCM3:CPU< 58-59 >
+      Task Instance: p6072:56:,MCM0:CPU< 12-13 >
+      Task Instance: p6072:57:,MCM1:CPU< 28-29 >
+      Task Instance: p6072:58:,MCM2:CPU< 44-45 >
+      Task Instance: p6072:59:,MCM3:CPU< 60-61 >
+      Task Instance: p6072:60:,MCM0:CPU< 14-15 >
+      Task Instance: p6072:61:,MCM1:CPU< 30-31 >
+      Task Instance: p6072:62:,MCM2:CPU< 46-47 >
+      Task Instance: p6072:63:,MCM3:CPU< 62-63 >
+      Task Instance: p6101:64:,MCM0:CPU< 0-1 >
+      Task Instance: p6101:65:,MCM1:CPU< 16-17 >
+      Task Instance: p6101:66:,MCM2:CPU< 32-33 >
+      Task Instance: p6101:67:,MCM3:CPU< 48-49 >
+      Task Instance: p6101:68:,MCM0:CPU< 2-3 >
+      Task Instance: p6101:69:,MCM1:CPU< 18-19 >
+      Task Instance: p6101:70:,MCM2:CPU< 34-35 >
+      Task Instance: p6101:71:,MCM3:CPU< 50-51 >
+      Task Instance: p6101:72:,MCM0:CPU< 4-5 >
+      Task Instance: p6101:73:,MCM1:CPU< 20-21 >
+      Task Instance: p6101:74:,MCM2:CPU< 36-37 >
+      Task Instance: p6101:75:,MCM3:CPU< 52-53 >
+      Task Instance: p6101:76:,MCM0:CPU< 6-7 >
+      Task Instance: p6101:77:,MCM1:CPU< 22-23 >
+      Task Instance: p6101:78:,MCM2:CPU< 38-39 >
+      Task Instance: p6101:79:,MCM3:CPU< 54-55 >
+      Task Instance: p6101:80:,MCM0:CPU< 8-9 >
+      Task Instance: p6101:81:,MCM1:CPU< 24-25 >
+      Task Instance: p6101:82:,MCM2:CPU< 40-41 >
+      Task Instance: p6101:83:,MCM3:CPU< 56-57 >
+      Task Instance: p6101:84:,MCM0:CPU< 10-11 >
+      Task Instance: p6101:85:,MCM1:CPU< 26-27 >
+      Task Instance: p6101:86:,MCM2:CPU< 42-43 >
+      Task Instance: p6101:87:,MCM3:CPU< 58-59 >
+      Task Instance: p6101:88:,MCM0:CPU< 12-13 >
+      Task Instance: p6101:89:,MCM1:CPU< 28-29 >
+      Task Instance: p6101:90:,MCM2:CPU< 44-45 >
+      Task Instance: p6101:91:,MCM3:CPU< 60-61 >
+      Task Instance: p6101:92:,MCM0:CPU< 14-15 >
+      Task Instance: p6101:93:,MCM1:CPU< 30-31 >
+      Task Instance: p6101:94:,MCM2:CPU< 46-47 >
+      Task Instance: p6101:95:,MCM3:CPU< 62-63 >
+      Task Instance: p6102:96:,MCM0:CPU< 0-1 >
+      Task Instance: p6102:97:,MCM1:CPU< 16-17 >
+      Task Instance: p6102:98:,MCM2:CPU< 32-33 >
+      Task Instance: p6102:99:,MCM3:CPU< 48-49 >
+      Task Instance: p6102:100:,MCM0:CPU< 2-3 >
+      Task Instance: p6102:101:,MCM1:CPU< 18-19 >
+      Task Instance: p6102:102:,MCM2:CPU< 34-35 >
+      Task Instance: p6102:103:,MCM3:CPU< 50-51 >
+      Task Instance: p6102:104:,MCM0:CPU< 4-5 >
+      Task Instance: p6102:105:,MCM1:CPU< 20-21 >
+      Task Instance: p6102:106:,MCM2:CPU< 36-37 >
+      Task Instance: p6102:107:,MCM3:CPU< 52-53 >
+      Task Instance: p6102:108:,MCM0:CPU< 6-7 >
+      Task Instance: p6102:109:,MCM1:CPU< 22-23 >
+      Task Instance: p6102:110:,MCM2:CPU< 38-39 >
+      Task Instance: p6102:111:,MCM3:CPU< 54-55 >
+      Task Instance: p6102:112:,MCM0:CPU< 8-9 >
+      Task Instance: p6102:113:,MCM1:CPU< 24-25 >
+      Task Instance: p6102:114:,MCM2:CPU< 40-41 >
+      Task Instance: p6102:115:,MCM3:CPU< 56-57 >
+      Task Instance: p6102:116:,MCM0:CPU< 10-11 >
+      Task Instance: p6102:117:,MCM1:CPU< 26-27 >
+      Task Instance: p6102:118:,MCM2:CPU< 42-43 >
+      Task Instance: p6102:119:,MCM3:CPU< 58-59 >
+      Task Instance: p6102:120:,MCM0:CPU< 12-13 >
+      Task Instance: p6102:121:,MCM1:CPU< 28-29 >
+      Task Instance: p6102:122:,MCM2:CPU< 44-45 >
+      Task Instance: p6102:123:,MCM3:CPU< 60-61 >
+      Task Instance: p6102:124:,MCM0:CPU< 14-15 >
+      Task Instance: p6102:125:,MCM1:CPU< 30-31 >
+      Task Instance: p6102:126:,MCM2:CPU< 46-47 >
+      Task Instance: p6102:127:,MCM3:CPU< 62-63 >
+      Task Instance: p6103:128:,MCM0:CPU< 0-1 >
+      Task Instance: p6103:129:,MCM1:CPU< 16-17 >
+      Task Instance: p6103:130:,MCM2:CPU< 32-33 >
+      Task Instance: p6103:131:,MCM3:CPU< 48-49 >
+      Task Instance: p6103:132:,MCM0:CPU< 2-3 >
+      Task Instance: p6103:133:,MCM1:CPU< 18-19 >
+      Task Instance: p6103:134:,MCM2:CPU< 34-35 >
+      Task Instance: p6103:135:,MCM3:CPU< 50-51 >
+      Task Instance: p6103:136:,MCM0:CPU< 4-5 >
+      Task Instance: p6103:137:,MCM1:CPU< 20-21 >
+      Task Instance: p6103:138:,MCM2:CPU< 36-37 >
+      Task Instance: p6103:139:,MCM3:CPU< 52-53 >
+      Task Instance: p6103:140:,MCM0:CPU< 6-7 >
+      Task Instance: p6103:141:,MCM1:CPU< 22-23 >
+      Task Instance: p6103:142:,MCM2:CPU< 38-39 >
+      Task Instance: p6103:143:,MCM3:CPU< 54-55 >
+      Task Instance: p6103:144:,MCM0:CPU< 8-9 >
+      Task Instance: p6103:145:,MCM1:CPU< 24-25 >
+      Task Instance: p6103:146:,MCM2:CPU< 40-41 >
+      Task Instance: p6103:147:,MCM3:CPU< 56-57 >
+      Task Instance: p6103:148:,MCM0:CPU< 10-11 >
+      Task Instance: p6103:149:,MCM1:CPU< 26-27 >
+      Task Instance: p6103:150:,MCM2:CPU< 42-43 >
+      Task Instance: p6103:151:,MCM3:CPU< 58-59 >
+      Task Instance: p6103:152:,MCM0:CPU< 12-13 >
+      Task Instance: p6103:153:,MCM1:CPU< 28-29 >
+      Task Instance: p6103:154:,MCM2:CPU< 44-45 >
+      Task Instance: p6103:155:,MCM3:CPU< 60-61 >
+      Task Instance: p6103:156:,MCM0:CPU< 14-15 >
+      Task Instance: p6103:157:,MCM1:CPU< 30-31 >
+      Task Instance: p6103:158:,MCM2:CPU< 46-47 >
+      Task Instance: p6103:159:,MCM3:CPU< 62-63 >
+      Task Instance: p6104:160:,MCM0:CPU< 0-1 >
+      Task Instance: p6104:161:,MCM1:CPU< 16-17 >
+      Task Instance: p6104:162:,MCM2:CPU< 32-33 >
+      Task Instance: p6104:163:,MCM3:CPU< 48-49 >
+      Task Instance: p6104:164:,MCM0:CPU< 2-3 >
+      Task Instance: p6104:165:,MCM1:CPU< 18-19 >
+      Task Instance: p6104:166:,MCM2:CPU< 34-35 >
+      Task Instance: p6104:167:,MCM3:CPU< 50-51 >
+      Task Instance: p6104:168:,MCM0:CPU< 4-5 >
+      Task Instance: p6104:169:,MCM1:CPU< 20-21 >
+      Task Instance: p6104:170:,MCM2:CPU< 36-37 >
+      Task Instance: p6104:171:,MCM3:CPU< 52-53 >
+      Task Instance: p6104:172:,MCM0:CPU< 6-7 >
+      Task Instance: p6104:173:,MCM1:CPU< 22-23 >
+      Task Instance: p6104:174:,MCM2:CPU< 38-39 >
+      Task Instance: p6104:175:,MCM3:CPU< 54-55 >
+      Task Instance: p6104:176:,MCM0:CPU< 8-9 >
+      Task Instance: p6104:177:,MCM1:CPU< 24-25 >
+      Task Instance: p6104:178:,MCM2:CPU< 40-41 >
+      Task Instance: p6104:179:,MCM3:CPU< 56-57 >
+      Task Instance: p6104:180:,MCM0:CPU< 10-11 >
+      Task Instance: p6104:181:,MCM1:CPU< 26-27 >
+      Task Instance: p6104:182:,MCM2:CPU< 42-43 >
+      Task Instance: p6104:183:,MCM3:CPU< 58-59 >
+      Task Instance: p6104:184:,MCM0:CPU< 12-13 >
+      Task Instance: p6104:185:,MCM1:CPU< 28-29 >
+      Task Instance: p6104:186:,MCM2:CPU< 44-45 >
+      Task Instance: p6104:187:,MCM3:CPU< 60-61 >
+      Task Instance: p6104:188:,MCM0:CPU< 14-15 >
+      Task Instance: p6104:189:,MCM1:CPU< 30-31 >
+      Task Instance: p6104:190:,MCM2:CPU< 46-47 >
+      Task Instance: p6104:191:,MCM3:CPU< 62-63 >
+      Task Instance: p6041:192:,MCM0:CPU< 0-1 >
+      Task Instance: p6041:193:,MCM1:CPU< 16-17 >
+      Task Instance: p6041:194:,MCM2:CPU< 32-33 >
+      Task Instance: p6041:195:,MCM3:CPU< 48-49 >
+      Task Instance: p6041:196:,MCM0:CPU< 2-3 >
+      Task Instance: p6041:197:,MCM1:CPU< 18-19 >
+      Task Instance: p6041:198:,MCM2:CPU< 34-35 >
+      Task Instance: p6041:199:,MCM3:CPU< 50-51 >
+      Task Instance: p6041:200:,MCM0:CPU< 4-5 >
+      Task Instance: p6041:201:,MCM1:CPU< 20-21 >
+      Task Instance: p6041:202:,MCM2:CPU< 36-37 >
+      Task Instance: p6041:203:,MCM3:CPU< 52-53 >
+      Task Instance: p6041:204:,MCM0:CPU< 6-7 >
+      Task Instance: p6041:205:,MCM1:CPU< 22-23 >
+      Task Instance: p6041:206:,MCM2:CPU< 38-39 >
+      Task Instance: p6041:207:,MCM3:CPU< 54-55 >
+      Task Instance: p6041:208:,MCM0:CPU< 8-9 >
+      Task Instance: p6041:209:,MCM1:CPU< 24-25 >
+      Task Instance: p6041:210:,MCM2:CPU< 40-41 >
+      Task Instance: p6041:211:,MCM3:CPU< 56-57 >
+      Task Instance: p6041:212:,MCM0:CPU< 10-11 >
+      Task Instance: p6041:213:,MCM1:CPU< 26-27 >
+      Task Instance: p6041:214:,MCM2:CPU< 42-43 >
+      Task Instance: p6041:215:,MCM3:CPU< 58-59 >
+      Task Instance: p6041:216:,MCM0:CPU< 12-13 >
+      Task Instance: p6041:217:,MCM1:CPU< 28-29 >
+      Task Instance: p6041:218:,MCM2:CPU< 44-45 >
+      Task Instance: p6041:219:,MCM3:CPU< 60-61 >
+      Task Instance: p6041:220:,MCM0:CPU< 14-15 >
+      Task Instance: p6041:221:,MCM1:CPU< 30-31 >
+      Task Instance: p6041:222:,MCM2:CPU< 46-47 >
+      Task Instance: p6041:223:,MCM3:CPU< 62-63 >
+      Task Instance: p6042:224:,MCM0:CPU< 0-1 >
+      Task Instance: p6042:225:,MCM1:CPU< 16-17 >
+      Task Instance: p6042:226:,MCM2:CPU< 32-33 >
+      Task Instance: p6042:227:,MCM3:CPU< 48-49 >
+      Task Instance: p6042:228:,MCM0:CPU< 2-3 >
+      Task Instance: p6042:229:,MCM1:CPU< 18-19 >
+      Task Instance: p6042:230:,MCM2:CPU< 34-35 >
+      Task Instance: p6042:231:,MCM3:CPU< 50-51 >
+      Task Instance: p6042:232:,MCM0:CPU< 4-5 >
+      Task Instance: p6042:233:,MCM1:CPU< 20-21 >
+      Task Instance: p6042:234:,MCM2:CPU< 36-37 >
+      Task Instance: p6042:235:,MCM3:CPU< 52-53 >
+      Task Instance: p6042:236:,MCM0:CPU< 6-7 >
+      Task Instance: p6042:237:,MCM1:CPU< 22-23 >
+      Task Instance: p6042:238:,MCM2:CPU< 38-39 >
+      Task Instance: p6042:239:,MCM3:CPU< 54-55 >
+      Task Instance: p6042:240:,MCM0:CPU< 8-9 >
+      Task Instance: p6042:241:,MCM1:CPU< 24-25 >
+      Task Instance: p6042:242:,MCM2:CPU< 40-41 >
+      Task Instance: p6042:243:,MCM3:CPU< 56-57 >
+      Task Instance: p6042:244:,MCM0:CPU< 10-11 >
+      Task Instance: p6042:245:,MCM1:CPU< 26-27 >
+      Task Instance: p6042:246:,MCM2:CPU< 42-43 >
+      Task Instance: p6042:247:,MCM3:CPU< 58-59 >
+      Task Instance: p6042:248:,MCM0:CPU< 12-13 >
+      Task Instance: p6042:249:,MCM1:CPU< 28-29 >
+      Task Instance: p6042:250:,MCM2:CPU< 44-45 >
+      Task Instance: p6042:251:,MCM3:CPU< 60-61 >
+      Task Instance: p6042:252:,MCM0:CPU< 14-15 >
+      Task Instance: p6042:253:,MCM1:CPU< 30-31 >
+      Task Instance: p6042:254:,MCM2:CPU< 46-47 >
+      Task Instance: p6042:255:,MCM3:CPU< 62-63 >
+--------------------------------------------------------------------------------
+Job Step Status on Allocated Hosts 
+----------------------------------
+
+    p6052.huygens.sara.nl:RUNNING
+    p6072.huygens.sara.nl:RUNNING
+    p6102.huygens.sara.nl:RUNNING
+    p6042.huygens.sara.nl:RUNNING
+    p6104.huygens.sara.nl:RUNNING
+    p6101.huygens.sara.nl:RUNNING
+    p6103.huygens.sara.nl:RUNNING
+    p6041.huygens.sara.nl:RUNNING
+
+### End of summarized "llq" output ###

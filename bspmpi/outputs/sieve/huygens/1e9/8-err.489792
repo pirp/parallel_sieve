@@ -1,0 +1,27 @@
+load SARA Compiler Wrappers (PATH).
+load IBM Java 5 SDK version 1.5 (JAVA_HOME PATH)
+load IBM XL C compiler version 10.1 (PATH, NLSPATH, MANPATH)
+load IBM XL C++ compiler version 10.1 (PATH, NLSPATH, MANPATH)
+load IBM XL Fortran compiler version 12.1 (PATH, NLSPATH, MANPATH)
+load BSPonMPI-0.3 library.
+load BSPonMPI-0.3 library.
+/usr/bin/ld: reopening parallelsieve.o: No such file or directory
+
+/usr/bin/ld:parallelsieve.o: bfd_stat failed: No such file or directory
+/usr/bin/ld: reopening parallelsieve.o: No such file or directory
+
+/usr/bin/ld:parallelsieve.o: bfd_stat failed: No such file or directory
+/usr/bin/ld: reopening parallelsieve.o: No such file or directory
+
+/usr/bin/ld:parallelsieve.o: bfd_stat failed: No such file or directory
+/usr/bin/ld: reopening parallelsieve.o: No such file or directory
+
+/usr/bin/ld: can not edit opd No such file or directory
+/usr/bin/ld: reopening parallelsieve.o: No such file or directory
+
+/usr/bin/ld: can not read symbols: No such file or directory
+/usr/bin/ld: reopening parallelsieve.o: No such file or directory
+
+/usr/bin/ld: final link failed: No such file or directory
+make: *** [par] Error 1
+./sh_sieve.sh: line 4: ./par_sieve: No such file or directory
