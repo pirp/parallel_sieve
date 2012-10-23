@@ -7,29 +7,39 @@
 int P;
 int N;
 int goldbach = 0;
-
+int twins=0;
 
 
 void parSieve(){
 	bsp_begin(P);
 	int p,s;
-	int m=N/2;
-	int q=sqrt(N);
 	p=bsp_nprocs();
 	s=bsp_pid();
+
+	bsp_push_reg(&N,SZINT);
+  	bsp_sync();
+  	bsp_get(0,&N,0,&N,SZINT);  
+  	bsp_sync();
+  	bsp_pop_reg(&N);
+	
+	int m=N/2;
+	int q=sqrt(N);
+
 	int i,j;
 
 	double t0=bsp_time();
 
+
 	// sieves sequentially and creates a list with only the primes up to sqrt(N)
+
 	int* list=seq(q);
 	int count=0;
-	for(i=0;i<q;i++) if(list[i]!=0) count++; 
+	for(i=0;i<q/2;i++) if(list[i]!=0) count++; 
 
 	int* initial_primes = vecalloci(count);
 	
 	i=0;
-	for(j=0;j<q;j++) {
+	for(j=0;j<q/2;j++) {
 		if(list[j]!=0) 
 		{
 			initial_primes[i]=list[j];
@@ -60,8 +70,11 @@ void parSieve(){
 		local[i]=0;
 		i++;
 	}
+	
+	//for(i=0;i<b;i++) printf("%d: local[%d]=%d, count %d\n",s,i,local[i],count2);
 
-	//actual sieving: whenever a multiple is found flag it by setting it negative
+
+	//actual parallel sieve: whenever a multiple is found it is flagged by setting it negative
 
 	
 
@@ -72,6 +85,8 @@ void parSieve(){
 			j+=initial_primes[i];
 		}
 	}
+
+	// counting the local primes and informing all other processors
 
 	int count2=0;
 
@@ -88,28 +103,35 @@ void parSieve(){
 
 	double t1=bsp_time();
 
+	// total count of primes
+
 	int finalCount=0;
 	for(i=0;i<p;i++) finalCount+=globalCount[i];
 
+	printf("%3d: Found %d primes in %.6lf s\n",s,finalCount,t1-t0);
 
-
-	printf("%d: ha! I claim there are %d primes in %.6lf s\n",s,finalCount,t1-t0);
-
-	// check twin primes locally
+	// Check for twin primes
 
 	int nlocaltwins = 0;
+
+	/*
+	* processor 0 checks also internally in the list of primes up to sqrt(N) and in
+	* the boundary between this list and the local list just sieved
+	*/ 
 
 	if(s==0){
 		for(i=1;i<count-1;i++) nlocaltwins+=twin(initial_primes[i],initial_primes[i+1]);
 		if(twin(initial_primes[count-1],local[0])) nlocaltwins++;
 	}
 
+	// check internally in the local list just sieved
 
 	for(i=0;i<b-1;i++){
 		if(local[i]<0) continue;
 		if(local[i+1]>0) nlocaltwins++;
 	}
 
+	// looks wether its last number was prime and let the next processor know
 	int local_last_is_prime = ((local[b-1]>0) ? 1 :0);
 	int previous_last_is_prime=0;
 	bsp_push_reg(&previous_last_is_prime,SZINT);
@@ -118,7 +140,11 @@ void parSieve(){
 	bsp_sync();
 	bsp_pop_reg(&previous_last_is_prime);
 	
+	// check for twin primes split to processors s-1 and s]
 	if(previous_last_is_prime && (local[0]>0)) nlocaltwins++;
+
+
+	// communication to let all processor know the local number of twin primes and sum it
 
 	int* globalTwinCount = vecalloci(p);
 	bsp_push_reg(globalTwinCount,p*SZINT);
@@ -131,11 +157,15 @@ void parSieve(){
 
 	int finalTwinCount=0;
 	for(i=0;i<p;i++) finalTwinCount+=globalTwinCount[i];
+	if(twins){
+		printf("%3d: Found %d pairs of twin primes in %.6lf s\n",s,finalTwinCount,t2-t1);
+	}
 
-	printf("%d: ha! I claim there are %d pairs of twin primes in %.6lf s\n",s,finalTwinCount,t2-t1);
-
-	// Goldbach stuff
+	// Goldbach conjecture checker: since it is rather costly it is done only whenever the appropriate flag is set
 	if(goldbach){
+
+		// compacts the list of primes sieved in parallel
+
 		int* localPrimes = vecalloci(count2);
 
 		i=0;
@@ -164,6 +194,8 @@ void parSieve(){
 		bsp_sync();
 		bsp_pop_reg(allPrimes);	
 
+		// computes the largest even to be checked and split the evens evenly to all the processors
+
 		int largestEven = ( N%2 ? N-1 : N );
 		int blockEven = ceil(1.0*(largestEven-4)/(2*p));
 
@@ -182,7 +214,8 @@ void parSieve(){
 			i++;
 		}
 		int k;
-		//	if (s==3)for(i=0;i<blockEven;i++) printf("%d, listEven[%d]=%d\n",s,i,listEven[i]);
+
+		// looks for the Goldbach partition of every local even
 
 		for(i=0;i<blockEven;i++){
 			for(j=0;j<finalCount;j++){
@@ -194,21 +227,21 @@ void parSieve(){
 			}
 			next:{};
 		}
+
+		// checks whether some number did not have a Goldbach partition
+
 		int numberNonGoldbach=0;
-		for(i=0;i<blockEven;i++) if(listEven[i]!= 0){
-			printf("%d: listEven[%d]=%d\n",s,i,listEven[i]);
-			numberNonGoldbach++;
-		}
+		for(i=0;i<blockEven;i++) if(listEven[i]!= 0) numberNonGoldbach++;
 		double t3 = bsp_time();
-		printf("%d: there are %d numbers that are not sum of 2 primes in %.6lf s\n",s,numberNonGoldbach,t3-t2);
+		printf("%3d: There are %d numbers that are not sum of 2 primes in %.6lf s\n",s,numberNonGoldbach,t3-t2);
 
-
-	//	vecfreei(localPrimes);
-	//	vecfreei(allPrimes);
+		vecfreei(listEven);
+		vecfreei(localPrimes);
+		vecfreei(allPrimes);
 	}
-//	vecfreei(local);
-//	vecfreei(globalCount);
-//	vecfreei(globalTwinCount);
+	vecfreei(local);
+	vecfreei(globalCount);
+	vecfreei(globalTwinCount);
 	bsp_end();
 }
 
@@ -219,10 +252,22 @@ int twin(int i, int j){
 int main(int argc, char **argv){
 	bsp_init(parSieve, argc, argv);
 
-	N = atoi(argv[1]);
-	P = atoi(argv[2]);
-	goldbach = atoi(argv[3]);
-	
+	if(argc>1){
+		N = atoi(argv[1]);
+		if (argc>2){
+			P = atoi(argv[2]);
+			if(argc>3){
+				goldbach = atoi(argv[3]);
+				twins=1;
+			}			
+		} else {
+			P=1;
+		}
+		
+	} else {
+		N=100;
+		P=1;
+	}
 
 	parSieve();
 
