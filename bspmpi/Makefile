@@ -1,6 +1,6 @@
 seq:
-	gcc -o sieve sequential.c -lm
+	gcc -O3 -o sieve sequential.c -lm
 par:
-	mpicc -o par_sieve parallelsieve.c -lbsponmpi -lm #-g
+	mpicc -O3 -o par_sieve parallelsieve.c -lbsponmpi -lm #-g
 all: seq par
 

@@ -253,9 +253,9 @@ int main(int argc, char **argv){
 	bsp_init(parSieve, argc, argv);
 
 	if(argc>1){
-		N = atoi(argv[1]);
+		N = atoi(argv[2]);
 		if (argc>2){
-			P = atoi(argv[2]);
+			P = atoi(argv[1]);
 			if(argc>3){
 				goldbach = atoi(argv[3]);
 				twins=1;
