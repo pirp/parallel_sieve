@@ -1,0 +1,22 @@
+
+ 
+ 1 processors 
+
+mpicc -o par_sieve parallelsieve.c -lbsponmpi -lm #-g
+  0: Found 50847534 primes in 26.383832 s
+
+ 
+ 2 processors 
+
+mpicc -o par_sieve parallelsieve.c -lbsponmpi -lm #-g
+  0: Found 50847534 primes in 17.500516 s
+  1: Found 50847534 primes in 17.500516 s
+
+ 
+ 4 processors 
+
+mpicc -o par_sieve parallelsieve.c -lbsponmpi -lm #-g
+  0: Found 50847534 primes in 13.500607 s
+  1: Found 50847534 primes in 13.500652 s
+  2: Found 50847534 primes in 13.500642 s
+  3: Found 50847534 primes in 13.500611 s

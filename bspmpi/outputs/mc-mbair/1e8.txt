@@ -1,19 +1,22 @@
-
+seq:
+real	0m1.150s
+user	0m1.068s
+sys	0m0.080s
  
  1 processors 
 
-  0: Found 5761455 primes in 2.296974 s
+  0: Found 5761455 primes in 1.369841 s
 
  
  2 processors 
 
-  1: Found 5761455 primes in 1.469093 s
-  0: Found 5761455 primes in 1.469068 s
+  0: Found 5761455 primes in 0.992140 s
+  1: Found 5761455 primes in 0.992138 s
 
  
  4 processors 
 
-  1: Found 5761455 primes in 1.096549 s
-  2: Found 5761455 primes in 1.095427 s
-  3: Found 5761455 primes in 1.094877 s
-  0: Found 5761455 primes in 1.096574 s
+  2: Found 5761455 primes in 0.837559 s
+  1: Found 5761455 primes in 0.837559 s
+  0: Found 5761455 primes in 0.837558 s
+  3: Found 5761455 primes in 0.835060 s
