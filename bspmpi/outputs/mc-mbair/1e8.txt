@@ -1,0 +1,19 @@
+
+ 
+ 1 processors 
+
+  0: Found 5761455 primes in 2.296974 s
+
+ 
+ 2 processors 
+
+  1: Found 5761455 primes in 1.469093 s
+  0: Found 5761455 primes in 1.469068 s
+
+ 
+ 4 processors 
+
+  1: Found 5761455 primes in 1.096549 s
+  2: Found 5761455 primes in 1.095427 s
+  3: Found 5761455 primes in 1.094877 s
+  0: Found 5761455 primes in 1.096574 s
