@@ -1,0 +1,11 @@
+load SARA Compiler Wrappers (PATH).
+load IBM Java 5 SDK version 1.5 (JAVA_HOME PATH)
+load IBM XL C compiler version 10.1 (PATH, NLSPATH, MANPATH)
+load IBM XL C++ compiler version 10.1 (PATH, NLSPATH, MANPATH)
+load IBM XL Fortran compiler version 12.1 (PATH, NLSPATH, MANPATH)
+load BSPonMPI-0.3 library.
+load BSPonMPI-0.3 library.
+    1500-036: (I) The NOSTRICT option (default at OPT(3)) has the potential to alter the semantics of a program.  Please refer to documentation on the STRICT/NOSTRICT option for more information.
+ATTENTION: 0031-408  16 tasks allocated by Resource Manager, continuing...
+ERROR: 0031-725  Failed to exec program ./bench_put; errno = 2
+ERROR: 0031-619  execvp error: No such file or directory

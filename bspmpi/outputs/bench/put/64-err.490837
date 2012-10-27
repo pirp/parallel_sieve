@@ -1,0 +1,52 @@
+load SARA Compiler Wrappers (PATH).
+load IBM Java 5 SDK version 1.5 (JAVA_HOME PATH)
+load IBM XL C compiler version 10.1 (PATH, NLSPATH, MANPATH)
+load IBM XL C++ compiler version 10.1 (PATH, NLSPATH, MANPATH)
+load IBM XL Fortran compiler version 12.1 (PATH, NLSPATH, MANPATH)
+load BSPonMPI-0.3 library.
+load BSPonMPI-0.3 library.
+    1500-036: (I) The NOSTRICT option (default at OPT(3)) has the potential to alter the semantics of a program.  Please refer to documentation on the STRICT/NOSTRICT option for more information.
+/usr/bin/ld: reopening bspbench.o: No such file or directory
+
+/usr/bin/ld:bspbench.o: bfd_stat failed: No such file or directory
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld:bspedupack.o: bfd_stat failed: No such file or directory
+/usr/bin/ld: reopening bspbench.o: No such file or directory
+
+/usr/bin/ld:bspbench.o: bfd_stat failed: No such file or directory
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld:bspedupack.o: bfd_stat failed: No such file or directory
+/usr/bin/ld: reopening bspbench.o: No such file or directory
+
+/usr/bin/ld:bspbench.o: bfd_stat failed: No such file or directory
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld:bspedupack.o: bfd_stat failed: No such file or directory
+/usr/bin/ld: reopening bspbench.o: No such file or directory
+
+/usr/bin/ld: can not edit opd No such file or directory
+/usr/bin/ld: reopening bspbench.o: No such file or directory
+
+/usr/bin/ld: can not read symbols: No such file or directory
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld: reopening bspedupack.o: No such file or directory
+
+/usr/bin/ld: reopening bspbench.o: No such file or directory
+
+/usr/bin/ld: final link failed: No such file or directory
+./bench.sh: line 5: ./bench_put: No such file or directory

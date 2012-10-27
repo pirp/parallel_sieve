@@ -1,0 +1,462 @@
+$MP_PROCS is set to 4.
+bspbench_get.c:
+bspedupack.c:
+n=     1 min= 139.810 max= 419.430 av= 240.299 Mflop/s  fool=    0.0
+n=     2 min= 372.827 max= 838.861 av= 430.207 Mflop/s  fool=   -9.1
+n=     4 min= 745.654 max= 1677.722 av= 863.328 Mflop/s  fool=  -27.3
+n=     8 min= 1032.444 max= 1677.722 av= 1503.407 Mflop/s  fool=  -63.8
+n=    16 min= 2064.888 max= 3355.443 av= 2620.544 Mflop/s  fool= -136.7
+n=    32 min= 2556.528 max= 3355.443 av= 2935.895 Mflop/s  fool= -282.4
+n=    64 min= 1952.258 max= 3702.558 av= 3402.675 Mflop/s  fool= -574.0
+n=   128 min= 2309.122 max= 3976.822 av= 3785.220 Mflop/s  fool=-1157.1
+n=   256 min= 3112.295 max= 4129.776 av= 3965.538 Mflop/s  fool=-2323.3
+n=   512 min= 3146.496 max= 4190.212 av= 4042.824 Mflop/s  fool=-4655.8
+n=  1024 min= 2906.915 max= 4231.495 av= 4132.135 Mflop/s  fool=-9320.7
+Time of     0-relation= 0.000172 sec=   709239 flops
+Time of     1-relation= 0.000177 sec=   729563 flops
+Time of     2-relation= 0.000215 sec=   888699 flops
+Time of     3-relation= 0.000229 sec=   946588 flops
+Time of     4-relation= 0.000230 sec=   949485 flops
+Time of     5-relation= 0.000231 sec=   953199 flops
+Time of     6-relation= 0.000234 sec=   965346 flops
+Time of     7-relation= 0.000236 sec=   975218 flops
+Time of     8-relation= 0.000234 sec=   966085 flops
+Time of     9-relation= 0.000236 sec=   975681 flops
+Time of    10-relation= 0.000237 sec=   979523 flops
+Time of    11-relation= 0.000236 sec=   977168 flops
+Time of    12-relation= 0.000236 sec=   974971 flops
+Time of    13-relation= 0.000237 sec=   978498 flops
+Time of    14-relation= 0.000240 sec=   992379 flops
+Time of    15-relation= 0.000244 sec=  1006960 flops
+Time of    16-relation= 0.000243 sec=  1005098 flops
+Time of    17-relation= 0.000248 sec=  1025471 flops
+Time of    18-relation= 0.000254 sec=  1047914 flops
+Time of    19-relation= 0.000281 sec=  1159111 flops
+Time of    20-relation= 0.000292 sec=  1204882 flops
+Time of    21-relation= 0.000297 sec=  1226418 flops
+Time of    22-relation= 0.000304 sec=  1257540 flops
+Time of    23-relation= 0.000311 sec=  1284770 flops
+Time of    24-relation= 0.000313 sec=  1292524 flops
+Time of    25-relation= 0.000311 sec=  1286534 flops
+Time of    26-relation= 0.000313 sec=  1294257 flops
+Time of    27-relation= 0.000308 sec=  1273982 flops
+Time of    28-relation= 0.000308 sec=  1271372 flops
+Time of    29-relation= 0.000299 sec=  1236664 flops
+Time of    30-relation= 0.000299 sec=  1236782 flops
+Time of    31-relation= 0.000288 sec=  1191750 flops
+Time of    32-relation= 0.000293 sec=  1211374 flops
+Time of    33-relation= 0.000293 sec=  1211542 flops
+Time of    34-relation= 0.000296 sec=  1221788 flops
+Time of    35-relation= 0.000298 sec=  1229344 flops
+Time of    36-relation= 0.000297 sec=  1228773 flops
+Time of    37-relation= 0.000296 sec=  1223778 flops
+Time of    38-relation= 0.000298 sec=  1230920 flops
+Time of    39-relation= 0.000299 sec=  1233935 flops
+Time of    40-relation= 0.000301 sec=  1242279 flops
+Time of    41-relation= 0.000301 sec=  1242693 flops
+Time of    42-relation= 0.000301 sec=  1243146 flops
+Time of    43-relation= 0.000301 sec=  1243688 flops
+Time of    44-relation= 0.000302 sec=  1246329 flops
+Time of    45-relation= 0.000304 sec=  1257993 flops
+Time of    46-relation= 0.000303 sec=  1253855 flops
+Time of    47-relation= 0.000302 sec=  1249018 flops
+Time of    48-relation= 0.000302 sec=  1246003 flops
+Time of    49-relation= 0.000304 sec=  1258032 flops
+Time of    50-relation= 0.000305 sec=  1260880 flops
+Time of    51-relation= 0.000305 sec=  1259845 flops
+Time of    52-relation= 0.000304 sec=  1257983 flops
+Time of    53-relation= 0.000306 sec=  1263609 flops
+Time of    54-relation= 0.000307 sec=  1268278 flops
+Time of    55-relation= 0.000309 sec=  1276908 flops
+Time of    56-relation= 0.000307 sec=  1267983 flops
+Time of    57-relation= 0.000307 sec=  1270298 flops
+Time of    58-relation= 0.000308 sec=  1271835 flops
+Time of    59-relation= 0.000307 sec=  1270170 flops
+Time of    60-relation= 0.000309 sec=  1275628 flops
+Time of    61-relation= 0.000309 sec=  1277736 flops
+Time of    62-relation= 0.000311 sec=  1287154 flops
+Time of    63-relation= 0.000311 sec=  1284563 flops
+Time of    64-relation= 0.000311 sec=  1285805 flops
+Time of    65-relation= 0.000312 sec=  1288524 flops
+Time of    66-relation= 0.000312 sec=  1288317 flops
+Time of    67-relation= 0.000313 sec=  1292366 flops
+Time of    68-relation= 0.000314 sec=  1298602 flops
+Time of    69-relation= 0.000315 sec=  1303272 flops
+Time of    70-relation= 0.000315 sec=  1301331 flops
+Time of    71-relation= 0.000316 sec=  1305705 flops
+Time of    72-relation= 0.000315 sec=  1303351 flops
+Time of    73-relation= 0.000318 sec=  1315468 flops
+Time of    74-relation= 0.000317 sec=  1309143 flops
+Time of    75-relation= 0.000319 sec=  1316788 flops
+Time of    76-relation= 0.000319 sec=  1317242 flops
+Time of    77-relation= 0.000317 sec=  1311340 flops
+Time of    78-relation= 0.000319 sec=  1317163 flops
+Time of    79-relation= 0.000319 sec=  1317537 flops
+Time of    80-relation= 0.000321 sec=  1325507 flops
+Time of    81-relation= 0.000321 sec=  1324384 flops
+Time of    82-relation= 0.000320 sec=  1322995 flops
+Time of    83-relation= 0.000322 sec=  1328522 flops
+Time of    84-relation= 0.000321 sec=  1327941 flops
+Time of    85-relation= 0.000323 sec=  1332896 flops
+Time of    86-relation= 0.000322 sec=  1332610 flops
+Time of    87-relation= 0.000322 sec=  1332236 flops
+Time of    88-relation= 0.000325 sec=  1343280 flops
+Time of    89-relation= 0.000323 sec=  1333812 flops
+Time of    90-relation= 0.000326 sec=  1345546 flops
+Time of    91-relation= 0.000325 sec=  1344639 flops
+Time of    92-relation= 0.000327 sec=  1350797 flops
+Time of    93-relation= 0.000328 sec=  1356915 flops
+Time of    94-relation= 0.000326 sec=  1348856 flops
+Time of    95-relation= 0.000328 sec=  1356491 flops
+Time of    96-relation= 0.000330 sec=  1364018 flops
+Time of    97-relation= 0.000329 sec=  1357693 flops
+Time of    98-relation= 0.000330 sec=  1361821 flops
+Time of    99-relation= 0.000331 sec=  1367742 flops
+Time of   100-relation= 0.000330 sec=  1362698 flops
+Time of   101-relation= 0.000331 sec=  1369062 flops
+Time of   102-relation= 0.000332 sec=  1371614 flops
+Time of   103-relation= 0.000332 sec=  1371170 flops
+Time of   104-relation= 0.000333 sec=  1374264 flops
+Time of   105-relation= 0.000334 sec=  1378520 flops
+Time of   106-relation= 0.000332 sec=  1371623 flops
+Time of   107-relation= 0.000337 sec=  1391583 flops
+Time of   108-relation= 0.000335 sec=  1383396 flops
+Time of   109-relation= 0.000335 sec=  1385879 flops
+Time of   110-relation= 0.000335 sec=  1384352 flops
+Time of   111-relation= 0.000336 sec=  1389593 flops
+Time of   112-relation= 0.000336 sec=  1388647 flops
+Time of   113-relation= 0.000336 sec=  1390421 flops
+Time of   114-relation= 0.000337 sec=  1391160 flops
+Time of   115-relation= 0.000337 sec=  1393524 flops
+Time of   116-relation= 0.000339 sec=  1400627 flops
+Time of   117-relation= 0.000337 sec=  1394470 flops
+Time of   118-relation= 0.000338 sec=  1396578 flops
+Time of   119-relation= 0.000339 sec=  1399878 flops
+Time of   120-relation= 0.000339 sec=  1399386 flops
+Time of   121-relation= 0.000339 sec=  1400666 flops
+Time of   122-relation= 0.000340 sec=  1405750 flops
+Time of   123-relation= 0.000341 sec=  1409385 flops
+Time of   124-relation= 0.000340 sec=  1403523 flops
+Time of   125-relation= 0.000345 sec=  1425917 flops
+Time of   126-relation= 0.000343 sec=  1416823 flops
+Time of   127-relation= 0.000345 sec=  1426370 flops
+Time of   128-relation= 0.000345 sec=  1427079 flops
+Time of   129-relation= 0.000347 sec=  1435709 flops
+Time of   130-relation= 0.000349 sec=  1440172 flops
+Time of   131-relation= 0.000350 sec=  1446034 flops
+Time of   132-relation= 0.000349 sec=  1440872 flops
+Time of   133-relation= 0.000350 sec=  1445541 flops
+Time of   134-relation= 0.000350 sec=  1447482 flops
+Time of   135-relation= 0.000350 sec=  1444842 flops
+Time of   136-relation= 0.000351 sec=  1451039 flops
+Time of   137-relation= 0.000351 sec=  1449019 flops
+Time of   138-relation= 0.000351 sec=  1450881 flops
+Time of   139-relation= 0.000352 sec=  1456122 flops
+Time of   140-relation= 0.000355 sec=  1467077 flops
+Time of   141-relation= 0.000355 sec=  1465373 flops
+Time of   142-relation= 0.000356 sec=  1469058 flops
+Time of   143-relation= 0.000358 sec=  1478604 flops
+Time of   144-relation= 0.000356 sec=  1472693 flops
+Time of   145-relation= 0.000356 sec=  1470998 flops
+Time of   146-relation= 0.000357 sec=  1474259 flops
+Time of   147-relation= 0.000356 sec=  1471038 flops
+Time of   148-relation= 0.000356 sec=  1470545 flops
+Time of   149-relation= 0.000357 sec=  1474880 flops
+Time of   150-relation= 0.000359 sec=  1483884 flops
+Time of   151-relation= 0.000361 sec=  1489756 flops
+Time of   152-relation= 0.000357 sec=  1475757 flops
+Time of   153-relation= 0.000360 sec=  1487283 flops
+Time of   154-relation= 0.000361 sec=  1490702 flops
+Time of   155-relation= 0.000362 sec=  1496042 flops
+Time of   156-relation= 0.000382 sec=  1577772 flops
+Time of   157-relation= 0.000397 sec=  1642360 flops
+Time of   158-relation= 0.000362 sec=  1497066 flops
+Time of   159-relation= 0.000362 sec=  1497362 flops
+Time of   160-relation= 0.000363 sec=  1500839 flops
+Time of   161-relation= 0.000364 sec=  1502652 flops
+Time of   162-relation= 0.000364 sec=  1504553 flops
+Time of   163-relation= 0.000365 sec=  1509263 flops
+Time of   164-relation= 0.000365 sec=  1510287 flops
+Time of   165-relation= 0.000366 sec=  1512524 flops
+Time of   166-relation= 0.000368 sec=  1518641 flops
+Time of   167-relation= 0.000368 sec=  1520878 flops
+Time of   168-relation= 0.000367 sec=  1517075 flops
+Time of   169-relation= 0.000368 sec=  1522031 flops
+Time of   170-relation= 0.000368 sec=  1520494 flops
+Time of   171-relation= 0.000368 sec=  1522523 flops
+Time of   172-relation= 0.000372 sec=  1535547 flops
+Time of   173-relation= 0.000370 sec=  1530503 flops
+Time of   174-relation= 0.000371 sec=  1531616 flops
+Time of   175-relation= 0.000371 sec=  1533892 flops
+Time of   176-relation= 0.000371 sec=  1532483 flops
+Time of   177-relation= 0.000372 sec=  1535212 flops
+Time of   178-relation= 0.000372 sec=  1538936 flops
+Time of   179-relation= 0.000373 sec=  1539921 flops
+Time of   180-relation= 0.000372 sec=  1538847 flops
+Time of   181-relation= 0.000375 sec=  1547734 flops
+Time of   182-relation= 0.000375 sec=  1549556 flops
+Time of   183-relation= 0.000375 sec=  1547734 flops
+Time of   184-relation= 0.000376 sec=  1552857 flops
+Time of   185-relation= 0.000376 sec=  1553399 flops
+Time of   186-relation= 0.000377 sec=  1556738 flops
+Time of   187-relation= 0.000377 sec=  1558600 flops
+Time of   188-relation= 0.000377 sec=  1559132 flops
+Time of   189-relation= 0.000379 sec=  1565920 flops
+Time of   190-relation= 0.000379 sec=  1565497 flops
+Time of   191-relation= 0.000380 sec=  1571171 flops
+Time of   192-relation= 0.000380 sec=  1570669 flops
+Time of   193-relation= 0.000382 sec=  1579841 flops
+Time of   194-relation= 0.000385 sec=  1590047 flops
+Time of   195-relation= 0.000382 sec=  1578757 flops
+Time of   196-relation= 0.000385 sec=  1590707 flops
+Time of   197-relation= 0.000384 sec=  1586491 flops
+Time of   198-relation= 0.000383 sec=  1583604 flops
+Time of   199-relation= 0.000384 sec=  1588441 flops
+Time of   200-relation= 0.000386 sec=  1594835 flops
+Time of   201-relation= 0.000385 sec=  1591781 flops
+Time of   202-relation= 0.000386 sec=  1595466 flops
+Time of   203-relation= 0.000388 sec=  1601623 flops
+Time of   204-relation= 0.000388 sec=  1602155 flops
+Time of   205-relation= 0.000387 sec=  1601121 flops
+Time of   206-relation= 0.000388 sec=  1605209 flops
+Time of   207-relation= 0.000416 sec=  1720002 flops
+Time of   208-relation= 0.000539 sec=  2225319 flops
+Time of   209-relation= 0.000392 sec=  1617977 flops
+Time of   210-relation= 0.000392 sec=  1618972 flops
+Time of   211-relation= 0.000390 sec=  1612105 flops
+Time of   212-relation= 0.000397 sec=  1638764 flops
+Time of   213-relation= 0.000391 sec=  1614381 flops
+Time of   214-relation= 0.000394 sec=  1627277 flops
+Time of   215-relation= 0.000392 sec=  1621120 flops
+Time of   216-relation= 0.000393 sec=  1623149 flops
+Time of   217-relation= 0.000395 sec=  1630173 flops
+Time of   218-relation= 0.000397 sec=  1642360 flops
+Time of   219-relation= 0.000395 sec=  1632656 flops
+Time of   220-relation= 0.000397 sec=  1639917 flops
+Time of   221-relation= 0.000396 sec=  1635218 flops
+Time of   222-relation= 0.000397 sec=  1639257 flops
+Time of   223-relation= 0.000398 sec=  1645454 flops
+Time of   224-relation= 0.000398 sec=  1643720 flops
+Time of   225-relation= 0.000398 sec=  1644961 flops
+Time of   226-relation= 0.000400 sec=  1651325 flops
+Time of   227-relation= 0.000399 sec=  1650783 flops
+Time of   228-relation= 0.000399 sec=  1647109 flops
+Time of   229-relation= 0.000398 sec=  1646163 flops
+Time of   230-relation= 0.000400 sec=  1654261 flops
+Time of   231-relation= 0.000401 sec=  1657226 flops
+Time of   232-relation= 0.000400 sec=  1653601 flops
+Time of   233-relation= 0.000401 sec=  1657847 flops
+Time of   234-relation= 0.000403 sec=  1664014 flops
+Time of   235-relation= 0.000403 sec=  1663640 flops
+Time of   236-relation= 0.000404 sec=  1668182 flops
+Time of   237-relation= 0.000403 sec=  1665827 flops
+Time of   238-relation= 0.000404 sec=  1671403 flops
+Time of   239-relation= 0.000403 sec=  1664999 flops
+Time of   240-relation= 0.000404 sec=  1667886 flops
+Time of   241-relation= 0.000405 sec=  1675088 flops
+Time of   242-relation= 0.000406 sec=  1675955 flops
+Time of   243-relation= 0.000407 sec=  1682280 flops
+Time of   244-relation= 0.000407 sec=  1680378 flops
+Time of   245-relation= 0.000407 sec=  1683472 flops
+Time of   246-relation= 0.000408 sec=  1684457 flops
+Time of   247-relation= 0.000407 sec=  1681698 flops
+Time of   248-relation= 0.000407 sec=  1682772 flops
+Time of   249-relation= 0.000408 sec=  1687067 flops
+Time of   250-relation= 0.000408 sec=  1686082 flops
+Time of   251-relation= 0.000409 sec=  1691737 flops
+Time of   252-relation= 0.000410 sec=  1692979 flops
+Time of   253-relation= 0.000411 sec=  1698968 flops
+Time of   254-relation= 0.000411 sec=  1698230 flops
+Time of   255-relation= 0.000411 sec=  1697766 flops
+Time of   256-relation= 0.000413 sec=  1704673 flops
+size of double = 8 bytes
+Range h=0 to p   : g= 15499.3, l= 827012.7
+Range h=p to HMAX: g= 2258.1, l= 1143675.9
+The bottom line for this BSP computer is:
+p= 32, r= 4132.135 Mflop/s, g= 2258.1, l= 1143675.9
+
+### Summarized output of "llq -l -x -j p6012.huygens.sara.nl.490845.0" invoked on p6072 ###
+        Job Step Id: p6012.huygens.sara.nl.490845.0
+           Job Name: p6012.huygens.sara.nl.490845
+          Step Name: 0
+  Structure Version: 10
+              Owner: bissstud
+         Queue Date: Thu Oct 25 00:02:15 2012
+             Status: Running
+          Recurring: False
+      Dispatch Time: Thu Oct 25 00:22:44 2012
+    Completion Date: Thu Oct 25 00:23:13 CEST 2012 (i.e. time of job epilog invocation)
+        Favored Job: No
+      Notifications: Never
+ Virtual Image Size: 1 kb
+         Large Page: N
+         Coschedule: no
+       SMT required: as_is
+    MetaCluster Job: no
+     Checkpointable: no
+   Ckpt Elapse Time: 0 seconds
+    Ckpt Accum Time: 0 seconds
+  Restart From Ckpt: no
+ Restart Same Nodes: no
+            Restart: no
+        Preemptable: yes
+ Preempt Wait Count: 0
+     User Hold Time: 00:00:00 (0 seconds)
+               RSet: RSET_MCM_AFFINITY
+Mcm Affinity Option: MCM_DISTRIBUTE MCM_MEM_PREF MCM_SNI_NONE
+      Task Affinity: core(1)
+      Cpus Per Core:  0
+   Parallel Threads:  0
+                Env: OMP_NUM_THREADS=1
+                 In: /dev/null
+                Out: /home/bissstud/Students11/d.taviani/parAlg/outputs/bench/get/32-out.490845
+                Err: /home/bissstud/Students11/d.taviani/parAlg/outputs/bench/get/32-err.490845
+Initial Working Dir: /gpfs/h05/bissstud/Students12/3776131/parallel_sieve/bspmpi/jobscripts/bench/get
+          Resources: ConsumableMemory(2.000 gb)
+          Step Type: General Parallel
+         Node Usage: not_shared
+    Submitting Host: p6012.huygens.sara.nl
+        Schedd Host: p6012.huygens.sara.nl
+      Job Queue Key: 490845
+        Notify User: bissstud@p6012.huygens.sara.nl
+              Shell: /bin/bash
+  LoadLeveler Group: No_Group
+              Class: short
+    Ckpt Hard Limit: undefined
+    Ckpt Soft Limit: undefined
+     Cpu Hard Limit: unlimited
+     Cpu Soft Limit: unlimited
+    Data Hard Limit: undefined
+    Data Soft Limit: undefined
+      As Hard Limit: undefined
+      As Soft Limit: undefined
+   Nproc Hard Limit: undefined
+   Nproc Soft Limit: undefined
+ Memlock Hard Limit: undefined
+ Memlock Soft Limit: undefined
+   Locks Hard Limit: undefined
+   Locks Soft Limit: undefined
+  Nofile Hard Limit: undefined
+  Nofile Soft Limit: undefined
+    Core Hard Limit: unlimited
+    Core Soft Limit: 0 bytes
+    File Hard Limit: undefined
+    File Soft Limit: undefined
+   Stack Hard Limit: unlimited
+   Stack Soft Limit: unlimited
+     Rss Hard Limit: undefined
+     Rss Soft Limit: undefined
+Step Cpu Hard Limit: unlimited
+Step Cpu Soft Limit: unlimited
+Wall Clk Hard Limit: 01:00:00 (3600 seconds)
+Wall Clk Soft Limit: 01:00:00 (3600 seconds)
+         Unix Group: bissstud
+ User Space Windows: 0
+      Bulk Transfer: No
+Adapter Requirement: (sn_all,MPI,US,not_shared,AVERAGE,instances=1,)
+          Step Cpus: 0
+Step Virtual Memory: 0.000 mb
+   Step Real Memory: 64.000 gb
+Step Large Page Mem: 0.000 mb
+       Running Host: p6072.huygens.sara.nl
+      Machine Speed: 1.000000
+  Starter User Time: 00:00:00.010000
+Starter System Time: 00:00:00.010000
+ Starter Total Time: 00:00:00.020000
+     Starter maxrss: 0
+      Starter ixrss: 0
+      Starter idrss: 0
+      Starter isrss: 0
+     Starter minflt: 449
+     Starter majflt: 2
+      Starter nswap: 0
+    Starter inblock: 0
+    Starter oublock: 0
+     Starter msgsnd: 0
+     Starter msgrcv: 0
+   Starter nsignals: 0
+      Starter nvcsw: 0
+     Starter nivcsw: 0
+     Step User Time: 00:04:47.750000
+   Step System Time: 00:00:09.000000
+    Step Total Time: 00:04:56.750000
+        Step maxrss: 0
+         Step ixrss: 0
+         Step idrss: 0
+         Step isrss: 0
+        Step minflt: 0
+        Step majflt: 0
+         Step nswap: 0
+       Step inblock: 0
+       Step oublock: 0
+        Step msgsnd: 0
+        Step msgrcv: 0
+      Step nsignals: 0
+         Step nvcsw: 0
+        Step nivcsw: 0
+     Cluster Option: none
+     Network Usages: 0(1,MPI,US,1,0),
+Stripe Min Networks: False
+--------------------------------------------------------------------------------
+Node
+----
+
+   Name            : 
+   Requirements    : (Memory >= 4096 )
+   Preferences     : 
+   Node minimum    : 1
+   Node maximum    : 1
+   Node actual     : 1
+   Allocated Hosts : p6072.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+
+   Master Task
+   -----------
+
+      Executable   : /home/bissstud/Students12/3776131/parallel_sieve/bspmpi/jobscripts/bench/get/js_get32
+      Exec Args    : 
+      Num Task Inst: 1
+      Task Instance: p6072:-1:,
+
+   Task
+   ----
+
+      Num Task Inst: 32
+      Task Instance: p6072:0:,MCM0:CPU< 0-1 >
+      Task Instance: p6072:1:,MCM1:CPU< 16-17 >
+      Task Instance: p6072:2:,MCM2:CPU< 32-33 >
+      Task Instance: p6072:3:,MCM3:CPU< 48-49 >
+      Task Instance: p6072:4:,MCM0:CPU< 2-3 >
+      Task Instance: p6072:5:,MCM1:CPU< 18-19 >
+      Task Instance: p6072:6:,MCM2:CPU< 34-35 >
+      Task Instance: p6072:7:,MCM3:CPU< 50-51 >
+      Task Instance: p6072:8:,MCM0:CPU< 4-5 >
+      Task Instance: p6072:9:,MCM1:CPU< 20-21 >
+      Task Instance: p6072:10:,MCM2:CPU< 36-37 >
+      Task Instance: p6072:11:,MCM3:CPU< 52-53 >
+      Task Instance: p6072:12:,MCM0:CPU< 6-7 >
+      Task Instance: p6072:13:,MCM1:CPU< 22-23 >
+      Task Instance: p6072:14:,MCM2:CPU< 38-39 >
+      Task Instance: p6072:15:,MCM3:CPU< 54-55 >
+      Task Instance: p6072:16:,MCM0:CPU< 8-9 >
+      Task Instance: p6072:17:,MCM1:CPU< 24-25 >
+      Task Instance: p6072:18:,MCM2:CPU< 40-41 >
+      Task Instance: p6072:19:,MCM3:CPU< 56-57 >
+      Task Instance: p6072:20:,MCM0:CPU< 10-11 >
+      Task Instance: p6072:21:,MCM1:CPU< 26-27 >
+      Task Instance: p6072:22:,MCM2:CPU< 42-43 >
+      Task Instance: p6072:23:,MCM3:CPU< 58-59 >
+      Task Instance: p6072:24:,MCM0:CPU< 12-13 >
+      Task Instance: p6072:25:,MCM1:CPU< 28-29 >
+      Task Instance: p6072:26:,MCM2:CPU< 44-45 >
+      Task Instance: p6072:27:,MCM3:CPU< 60-61 >
+      Task Instance: p6072:28:,MCM0:CPU< 14-15 >
+      Task Instance: p6072:29:,MCM1:CPU< 30-31 >
+      Task Instance: p6072:30:,MCM2:CPU< 46-47 >
+      Task Instance: p6072:31:,MCM3:CPU< 62-63 >
+--------------------------------------------------------------------------------
+Job Step Status on Allocated Hosts 
+----------------------------------
+
+    p6072.huygens.sara.nl:RUNNING
+
+### End of summarized "llq" output ###

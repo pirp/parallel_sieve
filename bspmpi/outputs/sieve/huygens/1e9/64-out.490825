@@ -1,0 +1,286 @@
+$MP_PROCS is set to 4.
+mpcc -O3 -o par_sieve parallelsieve.c -lbsponmpi -lm #-g
+ 53: Found 50847534 primes in 1.503636 s
+ 30: Found 50847534 primes in 1.502582 s
+ 32: Found 50847534 primes in 1.502885 s
+ 31: Found 50847534 primes in 1.502582 s
+ 33: Found 50847534 primes in 1.502988 s
+  0: Found 50847534 primes in 1.504072 s
+  2: Found 50847534 primes in 1.503929 s
+  4: Found 50847534 primes in 1.503516 s
+  6: Found 50847534 primes in 1.503591 s
+  8: Found 50847534 primes in 1.503519 s
+ 10: Found 50847534 primes in 1.503663 s
+ 12: Found 50847534 primes in 1.503659 s
+ 14: Found 50847534 primes in 1.503512 s
+ 16: Found 50847534 primes in 1.503511 s
+ 18: Found 50847534 primes in 1.503467 s
+ 20: Found 50847534 primes in 1.503316 s
+ 35: Found 50847534 primes in 1.503109 s
+ 22: Found 50847534 primes in 1.503192 s
+ 37: Found 50847534 primes in 1.502977 s
+ 24: Found 50847534 primes in 1.502990 s
+ 39: Found 50847534 primes in 1.503182 s
+ 26: Found 50847534 primes in 1.503106 s
+ 41: Found 50847534 primes in 1.503309 s
+ 28: Found 50847534 primes in 1.502995 s
+ 43: Found 50847534 primes in 1.503458 s
+ 29: Found 50847534 primes in 1.502888 s
+ 45: Found 50847534 primes in 1.503513 s
+  1: Found 50847534 primes in 1.503651 s
+ 47: Found 50847534 primes in 1.503505 s
+  3: Found 50847534 primes in 1.502945 s
+ 49: Found 50847534 primes in 1.503661 s
+  5: Found 50847534 primes in 1.503028 s
+ 51: Found 50847534 primes in 1.503663 s
+ 27: Found 50847534 primes in 1.503399 s
+ 55: Found 50847534 primes in 1.503596 s
+  7: Found 50847534 primes in 1.503291 s
+ 57: Found 50847534 primes in 1.503518 s
+  9: Found 50847534 primes in 1.503299 s
+ 59: Found 50847534 primes in 1.503924 s
+ 11: Found 50847534 primes in 1.503320 s
+ 60: Found 50847534 primes in 1.503650 s
+ 13: Found 50847534 primes in 1.503322 s
+ 61: Found 50847534 primes in 1.504065 s
+ 15: Found 50847534 primes in 1.503342 s
+ 62: Found 50847534 primes in 1.504264 s
+ 17: Found 50847534 primes in 1.503360 s
+ 63: Found 50847534 primes in 1.504299 s
+ 19: Found 50847534 primes in 1.503441 s
+ 34: Found 50847534 primes in 1.503409 s
+ 21: Found 50847534 primes in 1.503587 s
+ 36: Found 50847534 primes in 1.503693 s
+ 23: Found 50847534 primes in 1.503901 s
+ 38: Found 50847534 primes in 1.503916 s
+ 25: Found 50847534 primes in 1.503702 s
+ 40: Found 50847534 primes in 1.503586 s
+ 42: Found 50847534 primes in 1.503493 s
+ 44: Found 50847534 primes in 1.503363 s
+ 46: Found 50847534 primes in 1.503359 s
+ 48: Found 50847534 primes in 1.503328 s
+ 50: Found 50847534 primes in 1.503319 s
+ 52: Found 50847534 primes in 1.503298 s
+ 54: Found 50847534 primes in 1.503307 s
+ 56: Found 50847534 primes in 1.503059 s
+ 58: Found 50847534 primes in 1.502945 s
+
+### Summarized output of "llq -l -x -j p6012.huygens.sara.nl.490825.0" invoked on p6091 ###
+        Job Step Id: p6012.huygens.sara.nl.490825.0
+           Job Name: p6012.huygens.sara.nl.490825
+          Step Name: 0
+  Structure Version: 10
+              Owner: bissstud
+         Queue Date: Wed Oct 24 23:55:00 2012
+             Status: Running
+          Recurring: False
+      Dispatch Time: Wed Oct 24 23:58:55 2012
+    Completion Date: Wed Oct 24 23:59:22 CEST 2012 (i.e. time of job epilog invocation)
+        Favored Job: No
+      Notifications: Never
+ Virtual Image Size: 1 kb
+         Large Page: N
+         Coschedule: no
+       SMT required: as_is
+    MetaCluster Job: no
+     Checkpointable: no
+   Ckpt Elapse Time: 0 seconds
+    Ckpt Accum Time: 0 seconds
+  Restart From Ckpt: no
+ Restart Same Nodes: no
+            Restart: no
+        Preemptable: yes
+ Preempt Wait Count: 0
+     User Hold Time: 00:00:00 (0 seconds)
+               RSet: RSET_MCM_AFFINITY
+Mcm Affinity Option: MCM_DISTRIBUTE MCM_MEM_PREF MCM_SNI_NONE
+      Task Affinity: core(1)
+      Cpus Per Core:  0
+   Parallel Threads:  0
+                Env: OMP_NUM_THREADS=1
+                 In: /dev/null
+                Out: ../../outputs/sieve/huygens/1e9/64-out.490825
+                Err: ../../outputs/sieve/huygens/1e9/64-err.490825
+Initial Working Dir: /gpfs/h05/bissstud/Students12/3776131/parallel_sieve/bspmpi/jobscripts/1e9
+          Resources: ConsumableMemory(2.000 gb)
+          Step Type: General Parallel
+         Node Usage: not_shared
+    Submitting Host: p6012.huygens.sara.nl
+        Schedd Host: p6012.huygens.sara.nl
+      Job Queue Key: 490825
+        Notify User: bissstud@p6012.huygens.sara.nl
+              Shell: /bin/bash
+  LoadLeveler Group: No_Group
+              Class: short
+    Ckpt Hard Limit: undefined
+    Ckpt Soft Limit: undefined
+     Cpu Hard Limit: unlimited
+     Cpu Soft Limit: unlimited
+    Data Hard Limit: undefined
+    Data Soft Limit: undefined
+      As Hard Limit: undefined
+      As Soft Limit: undefined
+   Nproc Hard Limit: undefined
+   Nproc Soft Limit: undefined
+ Memlock Hard Limit: undefined
+ Memlock Soft Limit: undefined
+   Locks Hard Limit: undefined
+   Locks Soft Limit: undefined
+  Nofile Hard Limit: undefined
+  Nofile Soft Limit: undefined
+    Core Hard Limit: unlimited
+    Core Soft Limit: 0 bytes
+    File Hard Limit: undefined
+    File Soft Limit: undefined
+   Stack Hard Limit: unlimited
+   Stack Soft Limit: unlimited
+     Rss Hard Limit: undefined
+     Rss Soft Limit: undefined
+Step Cpu Hard Limit: unlimited
+Step Cpu Soft Limit: unlimited
+Wall Clk Hard Limit: 01:00:00 (3600 seconds)
+Wall Clk Soft Limit: 01:00:00 (3600 seconds)
+         Unix Group: bissstud
+ User Space Windows: 0
+      Bulk Transfer: No
+Adapter Requirement: (sn_all,MPI,US,not_shared,AVERAGE,instances=1,)
+          Step Cpus: 0
+Step Virtual Memory: 0.000 mb
+   Step Real Memory: 128.000 gb
+Step Large Page Mem: 0.000 mb
+       Running Host: p6091.huygens.sara.nl
+      Machine Speed: 1.000000
+  Starter User Time: 00:00:00.000000
+Starter System Time: 00:00:00.000000
+ Starter Total Time: 00:00:00.000000
+     Starter maxrss: 0
+      Starter ixrss: 0
+      Starter idrss: 0
+      Starter isrss: 0
+     Starter minflt: 0
+     Starter majflt: 0
+      Starter nswap: 0
+    Starter inblock: 0
+    Starter oublock: 0
+     Starter msgsnd: 0
+     Starter msgrcv: 0
+   Starter nsignals: 0
+      Starter nvcsw: 0
+     Starter nivcsw: 0
+     Step User Time: 00:00:00.000000
+   Step System Time: 00:00:00.000000
+    Step Total Time: 00:00:00.000000
+        Step maxrss: 0
+         Step ixrss: 0
+         Step idrss: 0
+         Step isrss: 0
+        Step minflt: 0
+        Step majflt: 0
+         Step nswap: 0
+       Step inblock: 0
+       Step oublock: 0
+        Step msgsnd: 0
+        Step msgrcv: 0
+      Step nsignals: 0
+         Step nvcsw: 0
+        Step nivcsw: 0
+     Cluster Option: none
+     Network Usages: 0(1,MPI,US,1,0),
+Stripe Min Networks: False
+--------------------------------------------------------------------------------
+Node
+----
+
+   Name            : 
+   Requirements    : (Memory >= 4096 )
+   Preferences     : 
+   Node minimum    : 2
+   Node maximum    : 2
+   Node actual     : 2
+   Allocated Hosts : p6091.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+                   + p6072.huygens.sara.nl:RUNNING:,MCM0:CPU< 0-1 >,MCM1:CPU< 16-17 >,MCM2:CPU< 32-33 >,MCM3:CPU< 48-49 >,MCM0:CPU< 2-3 >,MCM1:CPU< 18-19 >,MCM2:CPU< 34-35 >,MCM3:CPU< 50-51 >,MCM0:CPU< 4-5 >,MCM1:CPU< 20-21 >,MCM2:CPU< 36-37 >,MCM3:CPU< 52-53 >,MCM0:CPU< 6-7 >,MCM1:CPU< 22-23 >,MCM2:CPU< 38-39 >,MCM3:CPU< 54-55 >,MCM0:CPU< 8-9 >,MCM1:CPU< 24-25 >,MCM2:CPU< 40-41 >,MCM3:CPU< 56-57 >,MCM0:CPU< 10-11 >,MCM1:CPU< 26-27 >,MCM2:CPU< 42-43 >,MCM3:CPU< 58-59 >,MCM0:CPU< 12-13 >,MCM1:CPU< 28-29 >,MCM2:CPU< 44-45 >,MCM3:CPU< 60-61 >,MCM0:CPU< 14-15 >,MCM1:CPU< 30-31 >,MCM2:CPU< 46-47 >,MCM3:CPU< 62-63 >
+
+   Master Task
+   -----------
+
+      Executable   : /home/bissstud/Students12/3776131/parallel_sieve/bspmpi/jobscripts/1e9/js64
+      Exec Args    : 
+      Num Task Inst: 1
+      Task Instance: p6091:-1:,
+
+   Task
+   ----
+
+      Num Task Inst: 64
+      Task Instance: p6091:0:,MCM0:CPU< 0-1 >
+      Task Instance: p6091:1:,MCM1:CPU< 16-17 >
+      Task Instance: p6091:2:,MCM2:CPU< 32-33 >
+      Task Instance: p6091:3:,MCM3:CPU< 48-49 >
+      Task Instance: p6091:4:,MCM0:CPU< 2-3 >
+      Task Instance: p6091:5:,MCM1:CPU< 18-19 >
+      Task Instance: p6091:6:,MCM2:CPU< 34-35 >
+      Task Instance: p6091:7:,MCM3:CPU< 50-51 >
+      Task Instance: p6091:8:,MCM0:CPU< 4-5 >
+      Task Instance: p6091:9:,MCM1:CPU< 20-21 >
+      Task Instance: p6091:10:,MCM2:CPU< 36-37 >
+      Task Instance: p6091:11:,MCM3:CPU< 52-53 >
+      Task Instance: p6091:12:,MCM0:CPU< 6-7 >
+      Task Instance: p6091:13:,MCM1:CPU< 22-23 >
+      Task Instance: p6091:14:,MCM2:CPU< 38-39 >
+      Task Instance: p6091:15:,MCM3:CPU< 54-55 >
+      Task Instance: p6091:16:,MCM0:CPU< 8-9 >
+      Task Instance: p6091:17:,MCM1:CPU< 24-25 >
+      Task Instance: p6091:18:,MCM2:CPU< 40-41 >
+      Task Instance: p6091:19:,MCM3:CPU< 56-57 >
+      Task Instance: p6091:20:,MCM0:CPU< 10-11 >
+      Task Instance: p6091:21:,MCM1:CPU< 26-27 >
+      Task Instance: p6091:22:,MCM2:CPU< 42-43 >
+      Task Instance: p6091:23:,MCM3:CPU< 58-59 >
+      Task Instance: p6091:24:,MCM0:CPU< 12-13 >
+      Task Instance: p6091:25:,MCM1:CPU< 28-29 >
+      Task Instance: p6091:26:,MCM2:CPU< 44-45 >
+      Task Instance: p6091:27:,MCM3:CPU< 60-61 >
+      Task Instance: p6091:28:,MCM0:CPU< 14-15 >
+      Task Instance: p6091:29:,MCM1:CPU< 30-31 >
+      Task Instance: p6091:30:,MCM2:CPU< 46-47 >
+      Task Instance: p6091:31:,MCM3:CPU< 62-63 >
+      Task Instance: p6072:32:,MCM0:CPU< 0-1 >
+      Task Instance: p6072:33:,MCM1:CPU< 16-17 >
+      Task Instance: p6072:34:,MCM2:CPU< 32-33 >
+      Task Instance: p6072:35:,MCM3:CPU< 48-49 >
+      Task Instance: p6072:36:,MCM0:CPU< 2-3 >
+      Task Instance: p6072:37:,MCM1:CPU< 18-19 >
+      Task Instance: p6072:38:,MCM2:CPU< 34-35 >
+      Task Instance: p6072:39:,MCM3:CPU< 50-51 >
+      Task Instance: p6072:40:,MCM0:CPU< 4-5 >
+      Task Instance: p6072:41:,MCM1:CPU< 20-21 >
+      Task Instance: p6072:42:,MCM2:CPU< 36-37 >
+      Task Instance: p6072:43:,MCM3:CPU< 52-53 >
+      Task Instance: p6072:44:,MCM0:CPU< 6-7 >
+      Task Instance: p6072:45:,MCM1:CPU< 22-23 >
+      Task Instance: p6072:46:,MCM2:CPU< 38-39 >
+      Task Instance: p6072:47:,MCM3:CPU< 54-55 >
+      Task Instance: p6072:48:,MCM0:CPU< 8-9 >
+      Task Instance: p6072:49:,MCM1:CPU< 24-25 >
+      Task Instance: p6072:50:,MCM2:CPU< 40-41 >
+      Task Instance: p6072:51:,MCM3:CPU< 56-57 >
+      Task Instance: p6072:52:,MCM0:CPU< 10-11 >
+      Task Instance: p6072:53:,MCM1:CPU< 26-27 >
+      Task Instance: p6072:54:,MCM2:CPU< 42-43 >
+      Task Instance: p6072:55:,MCM3:CPU< 58-59 >
+      Task Instance: p6072:56:,MCM0:CPU< 12-13 >
+      Task Instance: p6072:57:,MCM1:CPU< 28-29 >
+      Task Instance: p6072:58:,MCM2:CPU< 44-45 >
+      Task Instance: p6072:59:,MCM3:CPU< 60-61 >
+      Task Instance: p6072:60:,MCM0:CPU< 14-15 >
+      Task Instance: p6072:61:,MCM1:CPU< 30-31 >
+      Task Instance: p6072:62:,MCM2:CPU< 46-47 >
+      Task Instance: p6072:63:,MCM3:CPU< 62-63 >
+--------------------------------------------------------------------------------
+Job Step Status on Allocated Hosts 
+----------------------------------
+
+    p6091.huygens.sara.nl:RUNNING
+    p6072.huygens.sara.nl:RUNNING
+
+### End of summarized "llq" output ###

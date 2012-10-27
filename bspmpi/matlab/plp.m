@@ -1,7 +1,7 @@
 %for b=[2,32,64,256]
-    b = int2str(32);
+    b = int2str(2);
     close all;
-    str = ['abyssos-' b '-get'];
+    str = ['mb-' b '-get'];
     str2 = [str '.txt'];
     pts = dlmread(str2);
     n = size(pts,1);

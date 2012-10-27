@@ -23,7 +23,7 @@ for k=[8,9]
     hold on;
     plot(air(:,1),air(:,1),'r');
     plot(pro(:,1),w(:),'-og');
-    legend('MacBook Air','Ideal','MacBook Pro');
+    legend('MacBook Air - MulticoreBSP','Ideal','MacBook Air - BSPonMPI');
     hold off;
     legend('Location','NorthWest');
     str3 = ['Speedup plot for n=10^' int2str(k)];

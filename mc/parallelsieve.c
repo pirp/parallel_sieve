@@ -71,8 +71,6 @@ void parSieve(){
 		i++;
 	}
 	
-	//for(i=0;i<b;i++) printf("%d: local[%d]=%d, count %d\n",s,i,local[i],count2);
-
 
 	//actual parallel sieve: whenever a multiple is found it is flagged by setting it negative
 
